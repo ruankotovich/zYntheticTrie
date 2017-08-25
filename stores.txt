@@ -1,0 +1,425 @@
+83;Arrocha o Nó Mat. de Construção;-3.0775641;-60.0376453;50;Rua Dona Hylma Thury, 7-9 - Alvorada Manaus - AM Brasil;null;83_2b515e2bdd63b7f034269ad747c93a42_brand.jpg
+177;Vidraçaria Lima;-3.1072591;-60.0531849;-1;Avenida Brasil, 11 - Compensa Manaus - AM Brasil;92-3018-3252;177_1cd6d154ebab7a8f6e2f988a69f9160a_brand.jpg
+149;Glogo Print Cartuchos E Toner;-3.0424469;-59.9827288;22;Avenida Timbiras, 867 - Cidade Nova Manaus - AM Brasil;92-99158-8619;149_9cfe8d0f077b2650644fa5cbdbbe7200_brand.jpg
+242;Au Miau Pet Shop;-3.0713012;-59.9453708;-1;Avenida Cosme Ferreira, 6073 - São José Manaus - AM Brasil;92-3249-7143;242_8230ad9d32561ea0d8b0b6e2724c014a_brand.jpg
+207;Pet Shop Bicho Sapeca;-3.0751933;-59.9466567;-1;Rua Padre Marcelino, 33 - Zumbi dos Palmares Manaus - AM 69084-430 Brasil;92-3088-9785;207_a7bdac284adcb0dafc90aa5b19653f62_brand.jpg
+269;Leandro Moto Peças;-3.1188025;-59.9902243;-1;Rua Portugal, 434 - Japiim Manaus - AM 69078-551 Brasil;92-3021-7445;269_06b906cd5e447f03bd66d2b7e37410cd_brand.jpg
+267;Loja Morenabella Cosméticos E Salão De Beleza;-3.1252722;-59.9985782;-1;Av Tefé , 10  - Raiz Manaus - AM Brasil;92-99289-1768;267_904267bb512cfb94e6ae280d94ff675e_brand.jpg
+334;José Hilton Fotografia;-3.1068869;-60.0454152;50;Rua Rubidio  (Antiga Santa Isabel), 681 - Esq. com a Percides (Antiga Guarani) Vila da Prata Manaus - AM 69033-170 Brasil;92-99123-4083;334_37dc0a436a374c75ae2f6c4dc53fdc4e_brand.jpg
+296;Amazontechcell;-3.0416172;-59.9824578;-1;Rua 17, 3 - Cidade Nova Manaus - AM 69094-170 Brasil;92-99100-1897;296_de880db9d029e52645e76b0a551df34e_brand.jpg
+341;Pet Shop Vira Lata;-3.068425;-60.0467964;-1;Avenida Constantinopla, 350-376 - Alvorada Manaus - AM Brasil;92-99122-4919;341_cdd341e0bb1dd2abe4ee5c024f57a283_brand.jpg
+335;RR Manutenção E Serviços;-3.0890952;-60.0635306;-1;Rua Ursa Menor, 182 - Santo Agostinho Manaus - AM 69036-581 Brasil;92-99408-7732;335_521830a31f5cbbdd9f933667ddb77a04_brand.jpg
+169;Ponto Do Pao Vitoria Em Cristo;-3.106112;-60.0552162;-1;Rua Sao Jose Beco Santa Rita N 07;(92)99391-6679;169_4fd77aeaebaa6c1b8bf685330278f76d_brand.jpg
+131;Tayana Doces;-3.0652299;-60.0555341;-1;Rua Quitéria Nobre, 14 - Planalto Manaus - AM 69044-290 Brasil;92-99415-0841;131_32cf19f41eaa29e34fcb6f7fa31b4d82_brand.jpg
+10;Drogaria Rocha;-3.0898326;-59.9867925;-1;Rua Santo Antônio, 52 - Coroado II Manaus - AM 69080-271 Brasil;null;null
+518;Dona de Si Joalheria AM Shopping;-3.0944641;-60.0227623;-1;Av. Djalma Batista, 482 - Parque Dez de Novembro, Manaus - AM, 69050-010, Brazil;null;518_06833e5cd290b36e8d135a11ff76ca76_brand.jpg
+610;Piz-Zás;-3.0976002;-60.0070552;-1;R. Belo Horizonte, 1351 - Adrianópolis, Manaus - AM, Brasil;92-98131-0046;610_f5b46ab9da2ece795cda14aa93ede882_brand.jpg
+178;Drogaria Super Droga;-3.1056596;-60.0535915;-1;av brasil, 1-75 - Compensa Manaus - AM 69030-110 Brasil;92-99192-6082;178_94e19ae9b74d13ad42e20407ffe4d95d_brand.jpg
+611;Franco's Pizza;-3.0908414;-60.0121374;-1;Av. Efigênio Salles, 440 - Adrianópolis, Manaus - AM, 69057-050, Brasil;92-3643-6767;null
+200;Connect Lan House & Serviços;-3.0797206;-59.9670691;10;Avenida Buriti, 309-513 - Coroado Manaus - AM 69082-750 Brasil;null;null
+208;Drogaria Kamyla;-3.0717853;-59.9460699;-1;Avenida Cosme Ferreira, 5946-5990 - Aleixo Manaus - AM Brasil;92-3248-2484;208_ee622c5e92a4b6b696f8b91dbbf8929c_brand.jpg
+342;CELEBRIDADE DO AÇO;-3.1364907;-60.0225591;-1;Rua Quintino Bocaiúva, 244 - Centro Manaus - AM 69005-110 Brasil;92-99283-7352;342_e9f1b4e7d449572e0841c3a53b40a993_brand.jpg
+54;Anima Festa;-3.0206756;-59.9768139;-1;Rua Imperatriz, 50-98 - Cidade Nova Manaus - AM 69095-621 Brasil;null;250_c36bca1561ee1339d0c3a025c9c4ec9e_brand.jpg
+297;Salão E Barbearia Studio K;-3.04390039;-59.98007938;-1;Rua 27, 27 - Cidade Nova Manaus - AM 69094-270 Brasil;92-99400-0567;297_9d2d8638ac53fc69536d4ac8e9d96577_brand.jpg
+339;Dimeninorecrearts;-3.0497651;-59.9713508;-1;Rua 1, 76 - Cidade Nova Manaus - AM 69098-332 Brasil;92-99418-3105;339_595cd789b52781cbfbcfec9bf6d58b69_brand.jpg
+209;Otica Hiper Visao;-3.0715988;-59.9455734;-1;Avenida Cosme Ferreira, 6002 - Aleixo Manaus - AM Brasil;92-3634-6185;209_fb20a952376d4486517c82bf6ae052d1_brand.jpg
+201;Estação Dos Cartuchos;-3.0288021;-59.981916;-1;Rua Rouxinol, 95-167 - Cidade Nova Manaus - AM 69095-020 Brasil;92-3223-2277;201_20c38df200b8831e375afa1bc41f2674_brand.jpg
+179;Otica Oftalnorte;-3.1065524;-60.0547209;-1;Avenida Brasil, 2424-2500 - Compensa Manaus - AM Brasil;92-3307-6120;179_2bb22a22d988ea06d2cbbe3c17159f14_brand.jpg
+170;Oticas Saraiva;-3.1061704;-60.0551556;-1;Av.Brasil N 133 Compensa I Av.Ramos Ferreira 2142 Praça 14;92-99389-2839;170_c59b469d724f7919b7d35514184fdc0f_brand.jpg
+243;Baratao Ferregens E Mat De Construção;-3.0717406;-59.9446254;-1;Alameda Cosme Ferreira, 6163 - Sao Jose 3 Manaus - AM 69084-480 Brasil;92-3030-5517;null
+195;S M EMBALAGENS E DESCARTAVEIS;-3.0362748;-60.0008596;-1;Rua Doutor Astrolábio Passos, 280-300 - Cidade Nova Manaus - AM Brasil;92-41012-2277;195_4e0b80c6c31febbb290fd799dd348e6a_brand.jpg
+248;Lb Store;-3.0806338;-60.0128036;-1;Rua 26, 1005-1065 - Parque Dez de Novembro Manaus - AM 69055-440 Brasil;92-99202-2184;248_345f602932dd4bb34260bf2da89f010a_brand.jpg
+270;Arsenal Dos Cães;-3.1175221;-59.9909468;-1;Rua Portugal, 806 - Japiim Manaus - AM 69063-480 Brasil;3664-5660;270_0473bb0beb8af2f7bc8d62dedd770e65_brand.jpg
+519;Dulima Amazonas Shopping;-3.0846185;-60.0092812;-1;Parque Dez de Novembro, Manaus - AM, 69055-021, Brazil;null;519_2b0bfdde3c5214198da4251bb5b39515_brand.jpg
+4;Rastrovia Inteligência Em Rastreamento;-3.114653262;-59.9765921384;-1;Avenida da Penetração III, 1915-1921 - Japiim Manaus - AM 69076-810 Brasil;null;4_ec7e8d975a477498fce5f807e64e2577_brand.jpg
+262;Pet Shop Bicho capricho;-3.0977196;-60.006752;-1;Rua Belo Horizonte, 1339-1351 - Adrianópolis Manaus - AM Brasil;92-99405-5539;262_19c6f3252850f5bd0512d68898680e78_brand.jpg
+271;Fabiano Celulares;-3.1167593;-59.9906758;-1;Avenida Américo Álvares, 73-149 - Japiim Manaus - AM 69078-560 Brasil;92-99233-2226;271_732ffbdc32207691340743de1f4d3c7f_brand.jpg
+60;Lumidan Materiais De Construção;-3.1237814;-59.9871538;-1;Avenida Tefé, 2521-2593 - Japiim Manaus - AM Brasil;92-3237-4720;null
+268;Pereira's Variedades Descartáveis e Embalagens;-3.11897294;-59.98997151;-1;Rua Portugal, 428 - Japiim Manaus - AM 69078-551 Brasil;92-99143-5957;268_36d21aa5ed11fd8efce2efa6ecc4f1e7_brand.jpg
+171;ÓTICA VEJA;-3.1060077;-60.0553159;-1;Av BRASIL 2337;(92)99365-0451;null
+180;Salao Nelson;-13;-54;-1;Av Brasil - MT 78870-000 Brasil;92-99232-2959;180_5fb578238b80d8af933580fbfd6ddb52_brand.jpg
+196;Farmácia FTB;-3.0325281;-59.98757;-1;Rua Paraná Mirim, 78 - Tancredo Neves Manaus - AM 69087-215 Brasil;92-3636-3282;196_6e9cf6e200f8cab20b04456e78b637dc_brand.jpg
+202;Salão Fátima;-3.0283143;-59.9818483;-1;Rua Rouxinol, 119 - Cidade Nova Manaus - AM 69095-020 Brasil;92-99249-3110;202_2d829f32f427a85423734a4f4611bc1c_brand.jpg
+272;Fix Cell;-3.1166531;-59.9906486;-1;Avenida Américo Álvares, 151 - Japiim Manaus - AM 69078-560 Brasil;92-99280-5500;272_80c7daf5919f36a97990bb5dd590b9a0_brand.jpg
+288;salão Oliveira;-3.1152886;-59.987515;-1;Rua José Monteiro, 83a - Japiim Manaus - AM Brasil;92-99370-9248;null
+221;Global Refrigeração;-3.0343304;-60.0016038;10;Rua 2, 6 - Colônia Santo Antônio Manaus - AM 69093-382 Brasil;92-3581-1141;null
+521;Dumond Amazonas Shopping;-3.094371;-60.022826;-1;Amazonas Shopping Center - Av. Djalma Batista, 482 - Loja 261-262 - Parque 10 de Novembro, Manaus - AM, 69050-902, Brazil;(92) 3632- 0023;521_a464a34b2bca498ec4e287b8001af36e_brand.jpg
+263;Clinica Veterinária Dr Romero;-3.097528;-60.0072036;-1;Rua Belo Horizonte, 1355 - Adrianópolis Manaus - AM Brasil;92-3346-1422;263_b955bf7795a798a599aaeaf4d5323b41_brand.jpg
+244;Top Moto Peças;-3.044465;-59.9826836;-1;Avenida Timbiras, 78 - Cidade Nova Manaus - AM Brasil;92-3348-4384;244_a799425602e69d741785e1ce1b35537f_brand.jpg
+123;Mania De Sushi Grill Bar;-3.0462774242;-59.9723596126;16;Rua 182, 308-370 - Cidade Nova Manaus - AM 69098-130 Brasil;92-9916-9558;123_220ba37ec833d25f20fb4a252699636f_brand.jpg
+522;Fiorentina Amazonas Shopping;-3.0939287;-60.0228506;-1;Amazonas Shopping - Av. Djalma Batista, 482 - Parque 10 de Novembro, Manaus - AM, 69050-902, Brazil;(92) 3216-5240;522_301c6ba0391bb4e57c66859dd0855c93_brand.jpg
+172;Drogaria Cabral;-3.1011348;-60.0569798;-1;Rua Belorizonte, 198 - Compensa Manaus - AM 69036-100 Brasil;(92)32321-2100;null
+249;Dog Walker Fast Pet Shop;-3.0067389;-60.0430207;-1;Rua Praia Canoa Quebrada - Tarumã Manaus - AM Brasil Condomínio Alpinia;92-99991-2921;249_2cf7acfaf288ff90b2324c6087a14a65_brand.jpg
+197;BR Moto Peças;-3.0303163;-59.9844446;-1;Avenida Noel Nutels, 1846-2150 - Cidade Nova Manaus - AM Brasil;92-3213-8443;197_2d0c1e3b6af672d627d265e1cf83be47_brand.jpg
+203;Fra Cabeleireiros;-3.0278742;-59.9817806;-1;Rua Rouxinol, 170-242 - Cidade Nova Manaus - AM 69095-020 Brasil;92-3345-7795;203_f14e9bced6f36e846bb78b079004be07_brand.jpg
+273;MaxCell;-3.1169519;-59.9913532;-1;Rua Portugal, 700 - Japiim Manaus - AM 69078-551 Brasil;92-99370-6939;273_1d97d6f8822b5d69cf914e14f6c1d78a_brand.jpg
+289;ideia criativa;-3.0674397;-59.952796;-1;Avenida Autaz Mirim, 5581 - São José Operário Manaus - AM Brasil;92-3071-5359;null
+245;Técnico injeção eletrónica;-3.0445897;-59.9825592;-1;Av Timbiras n 78;92-98145-2818;null
+261;Padaria Maná;-3.1066555;-60.0635306;25;Rua Sao Vicente N 07 Compensa 2;92-99475-0180;null
+264;Amazon Sign;-3.0994082;-60.0059391;-1;Rua Belo Horizonte, 1261 - Adrianópolis Manaus - AM 69057-060 Brasil;92-3307-4688;264_e338176acaed6ab9b50d9a6fb63ca4d1_brand.jpg
+274;Foco Publicidade;-3.1175935;-59.9910371;-1;Rua Aluízio Brasil , 685 - Japiim Manaus - AM 69078-551 Brasil;92-3611-8030;274_4b7003b7a5e58bd989f5f0b05f4b9590_brand.jpg
+246;A.R Informatica;-3.0783031;-59.9276991;-1;São José Operário Manaus - AM Brasil;92-99229-0379;246_53acc240773dbfaffe4a0fbbfc73c0e0_brand.jpg
+198;Drogaria Popular;-3.0423073;-59.9826384;10;Avenida Timbiras, 824-884 - Cidade Nova Manaus - AM Brasil;92-99393-1374;198_0867dcaa96eb108692032dede77ca367_brand.jpg
+290;Dan Som Acessórios Automotivo;-3.0660212076;-59.9519305676;-1;Avenida Autaz Mirim, 5756 - São José Operário Manaus - AM Brasil;92-99441-9860;290_cf073d4257cd4d281b0ea52f77e04d5a_brand.jpg
+204;Churrascaria Paraná;-3.0295145;-59.9818284;-1;Rua Rouxinol, 22-42 - Cidade Nova Manaus - AM Brasil;92-3641-6974;204_6bbb1d9a69563c0fbc9d699059d4f820_brand.jpg
+128;Auto Elétrica Arimateia;-3.0893046;-59.9808324;10;Avenida Beira Rio, 123 - Coroado Manaus - AM 69082-660 Brasil;null;128_c4d0babe3db5df4a37c6a970b4b334e7_brand.jpg
+250;Dmoveis Modulados;-3.0544072;-59.9853928;-1;Avenida Governador José Lindoso, 1048-1114 - Flores Manaus - AM 69058-473 Brasil;92-3342-3887;250_9628a789493c4f6b04c74ad1dd8f2414_brand.jpg
+340;Alegria Manauara;-3.0380165;-59.9710348;-1;Rua 77, 5 - Cidade Nova Manaus - AM 69094-600 Brasil;11-99809-8815;null
+265;Drogaria Cosme E Damiao;-3.1005696;-60.0061592;-1;Rua Belo Horizonte , 167 - Adrianópolis Manaus - AM 69057-510 Brasil;92-99455-1489;265_93e66cb8be17ef62f93383e3dec27dcb_brand.jpg
+102;Buttet Churrasco  Too;-3.1119616;-60.0169353;-1;Rua Libertador, 101 - Nossa Senhora das Gracas Manaus - AM 69057-070 Brasil;null;null
+175;Consultora Mary Key;-3.1216294;-60.0158296;-1;Atendimento A Domicílio❣;92-99302-3179;175_502ffc929e4854645a4657d969b759ed_brand.jpg
+247;Consultor Veterinário;-3.0709433;-60.0576983;-1;Rua Olinto Cabral de Vasconcelos, 14 - Planalto Manaus - AM 69044-260 Brasil;92-98406-9865;null
+199;Brother's Lava Jato;-3.048905;-59.9857088;-1;Av Das Torres Rua Barão do Rio Negro, 191-285 - Flores Manaus - AM 69058-741 Brasil;92-99526-1874;199_579f1aac681d08b7f95518d3cc80fd4f_brand.jpg
+205;Papalegua Moto Peças;-3.0742584;-59.949636;-1;Avenida Cosme Ferreira, 5428-5494 - Aleixo Manaus - AM Brasil;92-3248-9523;205_46c2d9dd8ea2457367e2d53a9d0baddb_brand.jpg
+275;Up Digital;-3.117742;-59.9913983;-1;Rua Aluísio Brasil, 685 B - Japiim Manaus - AM 69063-480 Brasil;92-99536-6303;275_1f60719e3b81d7bfe5e9359435cd18b1_brand.jpg
+266;Drogaria Santos;-3.1254092;-59.9931142;-1;Avenida Tefé, 27 - Raiz Manaus - AM Brasil;92-99262-6596;266_8061e1c12a6c81be64b6a90c1a2723e6_brand.jpg
+291;Ótica Visual;-3.0608705;-59.9495909;-1;Avenida Autaz Mirim, 6200-6426 - São José Operário Manaus - AM Brasil;92-3634-3518;291_55cb9434a4feaab0502516f929d8bb75_brand.jpg
+251;Criativa Gráfica e Personalizados;-3.0425209;-59.9829094;-1;Rua Onze, 102 - Cidade Nova Manaus - AM 69094-110 Brasil;92-99113-1198;251_f75ce121ac049c34ca85d78e55c2e355_brand.jpg
+17;Drogaria Vitória;-3.0903118;-59.9823675;-1;Rua Amazonas, 270 - Coroado  II Manaus - AM 69082-541 Brasil;92-99303-4180;17_5e38d982aecea3f5fa249828e8f1548a_brand.jpg
+6;AUTO PEÇAS MANÔA - SOMAZA;-3.0394119451;-60.0054527074;-1;Avenida Max Teixeira, 2350 - Cidade Nova I Manaus - AM Brasil;null;4_8c5ebe834bb61a2e5ab8ef38f8d940f3_brand.jpg
+292;Agrossara Clinica Veterinaria;-3.0606707;-59.9497715;-1;Avenida Autaz Mirim, 6413 - São José Operário Manaus - AM Brasil;92-3644-6288;292_b278cadbacdc8f543adcdcf4a875c625_brand.jpg
+165;Óticas Diniz Manôa;-3.0311707;-60.0012425;-1;Rua São Pedro, 2-8 - Colônia Santo Antônio Manaus - AM 69093-340 Brasil;null;165_c9079272e7ee76e97719613b234763c2_brand.jpg
+2;MM Rural;-3.0393944;-59.946747;-1;Rua 64, 101 - Cidade Nova Manaus - AM 69099-350 Brasil;null;13c5dfa246046c0beea97e100f32a1a9_brand.jpg
+166;SALÃO stillu's Hair;-3.0457472;-59.9696725;-1;Rua Cariré, 263-321 - Cidade Nova Manaus - AM Brasil;null;166_2894d283f009a0ccea78f0ecc7ec3f98_brand.jpg
+19;Drogaria Coroado;-3.0898321;-59.9823675;-1;Rua Amazonas, 381 - Coroado Manaus - AM 69082-541 Brasil;null;64_099b94a342e4f87f85779e13b83d412d_brand.jpg
+617;Steak Burguer Delivery;-3.1190275;-60.0217314;-1;Manaus, AM, Brasil;92-98162-2111;617_7dc556436cc9fda82ed201d3e24b71a4_brand.jpg
+206;Auto Peças Fortaleza;-3.0738663;-59.9491395;-1;Avenida Cosme Ferreira, 5553 - Aleixo Manaus - AM Brasil;92-3248-2030;206_e63fa86b2e14d52035654f0bedc183c5_brand.jpg
+24;Big Farma - Torquato Tapajos;-3.0550034;-60.0254631;-1;Alameda Santos Dumont, 22 - Da Paz Manaus - AM Brasil;null;24_30543a51b7a21d5312fdddfeecafb3d4_brand.jpg
+36;Pague Menos Drugstore - Franceses;-3.0734922;-60.0367419;-1;Avenida Desembargador João Machado, 5 - Alvorada Manaus - AM 69043-000 Brasil;null;7_21c3134ee5edcb618c4f9aae358d73a7_brand.jpg
+38;Som Auto - A Fera do Acessório;-3.1223318;-60.0130746;-1;Rua Visconde Porto Alegre, 1562 - Praça 14 de Janeiro Manaus - AM 69020-130 Brasil;null;183_e023f5006dfe4e62fa1b930087d5b3dc_brand.jpg
+39;Benayon Acessórios E Peças;-3.1229822;-60.0130295;-1;Rua Visconde De Porto Alegre, 1543 - Praça 14 Manaus - AM Brasil;null;187_c09b422ee93aed58c7c8ebc33af3a0d9_brand.jpg
+33;Prado Som Car;-3.1226834;-60.0133456;-1;Rua Visconde Porto Alegre, 1543 - Praça 14 de Janeiro Manaus - AM 69020-130 Brasil;null;160_28a77bee7c85482778816d0ddcb8bb11_brand.jpg
+34;Ampli Imports;-3.1225405;-60.013165;-1;Rua Visconde Porto Alegre, 1538 - Praça 14 de Janeiro Manaus - AM 69020-130 Brasil;null;161_1ec70938d658ceb82aa786bfaa90dffa_brand.jpg
+35;Ferragens Paraiba;-3.0734209;-60.0366515;-1;Avenida Desembargador João Machado, 5 - Alvorada Manaus - AM 69043-000 Brasil;null;7_82f2b308c3b01637c607ce05f52a2fed_brand.jpg
+47;Disbauto;-3.1219486;-60.0139779;-1;Rua Jonathas Pedrosa, 1800 - Praça 14 de Janeiro Manaus - A M 69020-110 Brasil;null;197_45b07de91125a18f09a8febb61bace3d_brand.jpg
+32;Loja Da Construção;-3.0718313;-60.0453804;50;Avenida Desembargador João Machado, 1234-1432 - Alvorada Manaus - AM Brasil;null;32_8c2290e2857508c014bfd88baaaefbbc_brand.jpg
+11;JT Comércio de Ferramentas;-3.0937342727;-59.9873011932;-1;Avenida Rodrigo Otávio, 1 - Coroado Manaus - AM 69080-005 Brasil;92-3342-7840;68_a6601ba88cc504a765cd798618c3fdcf_brand.jpg
+12;KF Construção e Comércio;-3.0472747;-59.9436072;-1;Avenida Autaz Mirim, 8002-8192 - Tancredo Neves Manaus - AM Brasil;null;null
+14;Menor Preço - P. Laranjeiras;-3.0500781;-59.9882375;-1;Av Barão Do Rio Branco 1195, Parque Das Laranjeiras;null;brand_menorpreco2.png
+18;CIDADE DO PEDREIRO;-3.0355492;-60.0010069;-1;Avenida Francisco Queiroz, 1 - Colônia Santo Antonio Manaus - AM Brasil;null;null
+37;IHS MATERIAIS DE CONSTRUCAO;-3.0992834;-60.0041327;-1;Rua José do Patrocínio, 13 - Aleixo Manaus - AM 69060-050 Brasil;null;164_e134c329162e2c6b90271fcb66cd2f55_brand.jpg
+20;Highlights Projetos e Iluminação;-3.1214848;-60.0166877;-1;Rua Japurá 1027 - Centro Manaus - AM 69020-180 Brasil;null;64_386dcacd43933bfe750a47e708d66462_brand.jpg
+25;Drogaria Sao João;-3.0446338782;-59.9718955904;-1;Rua 74, 41 - Cidade Nova, Nucleo IV, Manaus - AM Brasil;null;144_6fe1e85f49aff7aaf3710a9707135ef8_brand.jpg
+50;Casa Canarinho;-3.0849067;-60.0412138;-1;Avenida Dom Pedro I, 621 - Dom Pedro Manaus - AM 69040-040 Brasil;null;7_9c779f56f336b3c812343434f57b6a0e_brand.jpg
+52;Casa do Estudante;-3.0878672;-59.98309;-1;Rua São Pedro, 250 - Coroado II Manaus - AM 69080-500 Brasil;null;2_3837a451cd0abc5ce4069304c5442c87_brand.jpg
+30;Drogaria Eldorado;-3.0889699;-60.0230108;-1;Avenida Rio Negro, 23 - Eldorado Manaus - AM 69050-380 Brasil;null;30_a283ff7946fb6972442b718f6f79b699_brand.jpg
+57;Pãozinho da Polly;-3.0278602;-59.9970428;-1;Rua Guapiranga, 25 - Cidade Nova Manaus - AM Brasil;null;179_3427da6b33f55fe17fd4f2fdec297dc7_brand.jpg
+56;Ale Animações E Recreações;-3.1324261;-60.0133456;-1;Rua Visconde Porto Alegre, 454 - Praça 14 de Janeiro Manaus - AM 69020-130 Brasil;null;56_a06501613f497fea4d45920ff6381c31_brand.jpg
+509;Amoo Bijoux Amazonas Shopping;-3.0940597;-60.0227905;-1;Av. Djalma Batista, 482 - Parque Dez de Novembro, Manaus - AM, 69055-035, Brazil 1o piso;(92) 3348-4800;509_6befe2f015fa5034cffbd4c220ac1a98_brand.jpg
+58;Artesã Farmacia De Manipulação;-3.1211419;-60.0057585;-1;Avenida Carvalho Leal, 1616 - Cachoeirinha Manaus - AM 69065-001 Brasil;null;58_a3b962002927b2a8e6d34c00030880b9_brand.jpg
+70;Fábrica Brigadão;-3.125159972;-60.0305306911;-1;Rua Benjamin Silva, N 103, Centro;null;70_e44bab3eafbf57f1ca23ed750e8b274d_brand.jpg
+59;Guarany Tintas - Tefe;-3.1244521;-60.0041327;-1;Avenida Tefé, 577 - Cachoeirinha Manaus - AM Brasil;null;null
+69;Visual Mix;-3.0759683;-60.0081972;-1;Avenida Tancredo Neves, 17 - Parque Dez de Novembro Manaus - AM 69054-040 Brasil;null;69_64a4250dded75fcc7ac237f910e8a54e_brand.jpg
+51;Almeidinha jr Dist;-3.1059344;-60.0404007;50;Avenida São Jorge, 547 - São Jorge Manaus - AM Brasil;98187-8310;133_ff49cc40a8890e6a60f40ff3026d2730_brand.jpg
+46;Arca de Noé;-3.0882579;-60.0243657;-1;Avenida Djalma Batista, 451 - Nossa Senhora das Gracas Manaus - AM Brasil;3236-3013;46_634aab7e62f3a98315c23f0c9f156133_brand.jpg
+55;Quitutes Asnah;-3.1006441;-60.0114939;-1;Rua Maceió  800 - Adrianópolis Manaus - AM Brasil;null;253_4e9f0ec9c2570fda02bba81f6fd07f0d_brand.jpg
+31;A Marques Motos;-3.0736883;-60.0408942;-1;Estrada do Sesc, 2-114 - Alvorada Manaus - AM 69043-840 Brasil;null;158_03f67020b5cdfa189b0bf02fe53909e3_brand.jpg
+28;Art Lustres;-3.1060472;-60.0242302;-1;Avenida Djalma Batista, 1005 - São Geraldo Manaus - AM 69050-010 Brasil;null;28_f2a8abad1295395284a43a91312923e5_brand.jpg
+48;Art Pedras;-3.0861058;-60.0338262;-1;Av. Pedro Teixeira, 2200 - D. Pedro;null;7_4d1a65f1c6d24c1f8f714fe7e31d29fc_brand.jpg
+29;Casa Norte Brasil;-3.105803;-60.0240947;-1;Avenida Djalma Batista, 1203-1279 - Nossa Senhora das Gracas Manaus - AM Brasil;null;7_e43739bba7cdb577e9e3e4e42447f5a5_brand.jpg
+49;Drogaria Sao Carlos;-3.0854737;-60.0408144;-1;Avenida Dom Pedro I, 478 - Dom Pedro Manaus - AM 69040-040 Brasil;null;49_4859edcdcd9144015c80a8f0dab72c5b_brand.jpg
+88;Cores e Cores Materiais De Construção;-3.091867;-60.0373931;-1;Rua Jacira Réis, 367-399 - Dom Pedro Manaus - AM 69040-270 Brasil;null;88_f96f40bdb8cb393c6e35be1f7464e339_brand.jpg
+80;Casa Construttiva;-2.98569921;-60.0078233;-1;Avenida Sete de Maio, 1214 - Santa Etelvina Manaus - AM Brasil;null;80_ccea971d77cb4f249d1005f8f4a34bfe_brand.jpg
+293;Latidus Dog Pet Shop;-3.1309671;-60.0134037;-1;Av Visconde de Porto Alegre de Porto Alegre 66;92-3232-4463;293_632543241ef13c9d72ad4ee8d8ae0b74_brand.jpg
+615;Franco's Pizza;-3.0908414;-60.0121374;-1;Av. Efigênio Salles, 440 - Adrianópolis, Manaus - AM, 69057-050, Brasil;92-3643-6767;615_fa9b863bdc714e2643a7318edf1b90a4_brand.jpg
+53;Impolut Comércio;-3.0872593;-60.0319539;-1;Rua Almirante Maximiano  - Dom Pedro Manaus - AM 69040-110 Brasil;null;53_cf2b0bc766d2eb15daa71ee988d2fa82_brand.jpg
+81;Mais Farma;-3.0759912;-60.0344382;5;Av B, 2 - Alvorada Manaus - AM 69043-310 Brasil;null;81_1ddfa4ccdcea53130b500eaabb190e4b_brand.jpg
+523;First Class;-3.0940597;-60.0227905;-1;Av. Djalma Batista, 482 - Parque Dez de Novembro, Manaus - AM, 69055-035, Brasil;92 3307-8214;523_65071edd6c6a5891e9f7dfe4f08484ef_brand.jpg
+86;Drogaria Sao Raphael;-3.0828479;-60.0422528;5;Avenida Dom Pedro I, 624 - Dom Pedro Manaus - AM 69040-040 Brasil;null;86_23750bb6052e885b1d81ceaff5e0e05a_brand.jpg
+92;AgroApolo Pet Shop;-3.0773339;-60.0484426;10;Avenida I, 320-400 - Alvorada Manaus - AM 69042-200 Brasil;null;92_1a564f775ff61e1de35647f88b3e731d_brand.jpg
+91;Kit Festas;-3.1246461;-59.9928433;49;Rua Couto do Valê, 910 - Petrópolis Manaus - AM 69063-310 Brasil;null;91_da95ea3f075f00165a17d221c5b6d954_brand.jpg
+90;Drogaria Manauara;-3.1252525;-59.9903146;5;Estrada da Viana, 12 - Japiim Manaus - AM Brasil;null;null
+89;JR Papelaria Variedades;-3.1249404;-59.9904086;5;Rua Principal, 8 - Japiim Manaus - AM 69078-724 Brasil;null;89_fa6fc8cc9caabf28a7e01fe0e46e6702_brand.jpg
+61;Drogaria São Lucas;-3.1130385;-59.9805453;10;Avenida Penetração I, 902-950 - Japiim Manaus - AM 69076-790 Brasil;null;61_e8317d6da8a33d7f428959de81d3f561_brand.jpg
+106;New Print;-3.1065383;-60.0534417;10;Rua Tobias Barreto, 56 - Compensa Manaus - AM 69030-020 Brasil;null;null
+97;Loja Do Motoqueiro;-3.1232287;-59.9859346;10;Avenida Tefé, 256 - Japiim Manaus - AM Brasil;null;97_de4b4671c85b2d766a5b36763d2b1d6e_brand.jpg
+85;AgroVida;-3.0824421;-60.0424335;-1;Avenida Dom Pedro I, 26 - Dom Pedro Manaus - AM 69040-040 Brasil;3086-2548;null
+82;AgroDog Petshop;-3.0785922;-60.0376453;-1;Avenida Prof.Abilio Alencar, 25 - Antiga Av. B - Alvorada 1 - Manaus - AM 69043-150 Brasil;3238-7080 / 99534-3434;82_9e07dbcf45c1e5180e664f4a507b381f_brand.jpg
+130;TS Etiquetas;-3.121742;-59.985449;-1;Rua 5 de Setembro, 87 - Japiim, Manaus - AM, Brasil;92-99972-9310;130_ac5f3b83728fb5da7cd6f0b2a74b687a_brand.jpg
+98;Portelinha Moto Peças;-3.1247156;-59.9885084;10;Avenida Tefé, 3161-3241 - Japiim Manaus - AM Brasil;null;98_1c4f2298f5a84783c66d454d1311c0cc_brand.jpg
+99;G&R CARTUCHOS;-3.1254728;-59.99623;-1;Avenida Tefé, 76 - Raiz Manaus - AM Brasil;null;99_5b0ebd596f6b9afa67f4f05c410a59d0_brand.jpg
+107;Salão Mega Beleza Hair;-3.1060901;-60.0530946;-1;Rua Tobias Barreto, 109 - Compensa Manaus - AM 69030-020 Brasil;null;107_a5e81d6359de58d27e34d607eb5bf9be_brand.jpg
+96;Arte Ink;-3.1205667;-59.9847743;-1;Avenida Tefé, 651 - Japiim Manaus - AM Brasil;null;null
+400;Belladonna;-21.7469383;-43.3519125;-1;Av. Brasil, 3642 - Mariano Procópio, Juiz de Fora - MG, 36045-475, Brasil;3642-6330;400_69813458dd056bcfff86b825365813a6_brand.jpg
+104;Cv Amazônia;-3.1244614;-60.013165;-1;Rua Visconde Porto Alegre, 1386A - Praça 14 de Janeiro Manaus - AM 69020-130 Brasil;null;104_776ca72a6bbfd884e5cf3c8cccb42ac7_brand.jpg
+105;Drogaria Cabral;-3.1067902;-60.0535463;-1;Avenida Brasil, 2515-2581 - Compensa Manaus - AM 69036-110 Brasil;null;105_c4ba4f3f61006bdce9597fd03aa55c00_brand.jpg
+108;Mega  Hair & Cia;-3.1054444047;-60.0524121523;-1;Rua Brasil, 109 - Compensa Manaus - AM 69030-020 Brasil;null;108_150253458b34f4ba12b77cff5d3f7a5b_brand.jpg
+111;CGK2 MOTOS;-3.1116208;-60.0467108;10;Avenida Brasil, 3575-3625 - Vila da Prata Manaus - AM Brasil;null;111_79097f53972389db5f1f5fd3683a4aad_brand.jpg
+119;Studio D+;-3.0613196;-60.0063907;20;Rua Visconde de Ouro Preto, 5 - Flores Manaus - AM 69058-080 Brasil;null;119_d3b5930d9f1bed6bca62949b265009e1_brand.jpg
+116;Pre Marmore E Granito;-3.1066643;-60.053527;15;Rua Tobias Barreto, 45 - Compensa Manaus - AM 69030-020 Brasil;null;116_d70464ef54cad430424bf01598c51598_brand.jpg
+118;STUDIO S;-3.106516;-60.0533474;-1;Rua Tobias Barreto, 49 - Compensa Manaus - AM 69030-020 Brasil;null;118_5561a19df15c0f6f6aef6d7c4faf48ee_brand.jpg
+100;Pet House & Cia;-3.1265523;-60.0076552;-1;Avenida Presidente Castelo Branco, 1016 - Cachoeirinha Manaus - AM 69065-011 Brasil;null;100_02e2524b1e69f8ea51e70cf565cc352e_brand.jpg
+121;El Mariachi;-3.06051;-59.9912177;-1;Avenida Professor Nilton Lins, 4537 - Flores Manaus - AM 69058-580 Brasil;null;121_17d28a48876b7039981e428ea36a168f_brand.jpg
+120;Nicolai Burgs;-3.1126015;-59.9827288;20;Rua 35, 751-755 - Japiim Manaus - AM 69077-360 Brasil;null;120_affd5bf4ac6de152a86503d2d274724c_brand.jpg
+133;Drogaria Sofia;-3.0879285;-59.9806518;-1;Avenida Beira Mar, 58-64 - Coroado Manaus - AM 69080-030 Brasil;null;133_ffe0ecfcec97dc4646ad8408fbe62b6a_brand.jpg
+117;Babydog;-3.1068588;-60.0535463;-1;Avenida Brasil, 2515-2581 - Compensa Manaus - AM 69036-110 Brasil;null;117_5ea2d1e8f44a9eab033cb5a47679566b_brand.jpg
+101;Pelo Fofo;-3.0821343;-60.0137261;-1;Rua 24, 967-3 - Parque Dez de Novembro Manaus - AM Brasil;null;101_a7bea1d0ccaf9a4a2c2311059923b554_brand.jpg
+138;Belmonte Moto Peças;-3.0898669;-59.9829788;-1;Rua Santo Antônio, 459 - Coroado II Manaus - AM 69080-280 Brasil;null;138_239573e483acf694c1212928f47fa99d_brand.jpg
+125;Vidraçaria Império;-3.0936991;-59.9811033;-1;Av: Beira Rio N 227 Coroado 3;null;125_133a1d4c028736d9023d335f06594a0e_brand.jpg
+402;Neide Coiffeur;-3.123083;-60.0046068;-1;Av. Parintins, Manaus - AM, Brasil;92 8184-7498;402_f3ef0f10928370c7d5d72e08c490ab63_brand.jpg
+139;Gráfica Visão;-3.0897692;-59.9825481;-1;Rua Santo Antônio, 511 - Coroado Manaus - AM 69080-271 Brasil;null;null
+95;MULTSAF PUBLICIDADE;-3.0878510358;-59.9794574082;-1;Rua Ouro Preto, 640 - Coroado Manaus - AM 69080-430 Brasil;92-99251-2105;95_55655e3296788419699ec577c7a76f6b_brand.jpg
+132;S.O.S Dos Óculos;-3.0879285;-59.9806518;11;Avenida Beira Mar, 58-64 - Coroado Manaus - AM 69080-030 Brasil;null;132_af630409faeec4bc846e5693ce20b860_brand.jpg
+126;Salão Léia Coiffeur;-3.0930315;-59.9827739;10;Rua Santa Helena, 2-90 - Coroado Manaus - AM 69080-740 Brasil;null;126_2adfd952d109f78f310901931aa1675b_brand.jpg
+127;Mudesta Sonho  De Papel;-3.0908095;-59.9807421;10;Avenida Beira Rio, 151 - Coroado Manaus - AM 69082-660 Brasil;null;127_3baa67cdc16142ce00fb83870f7bf21c_brand.jpg
+136;Hamburgueria 159;-3.0715046;-59.990134;10;Estrada de Belém, 190-374 - Parque 10 de Novembro Manaus - AM Brasil Entrada Da Colônia Japonesa;null;null
+129;Kero Coxita;-3.0878459;-59.9802002;10;Avenida Beira Rio, 87 - Coroado Manaus - AM 69082-660 Brasil;null;129_248f21291433d30a407269dff505843d_brand.jpg
+5;Paulista Materiais de Construção Ltda;-3.0361364;-60.0005284;-1;Avenida Noel Nutels, 3014 - Cidade Nova Manaus - AM Brasil;null;5_43a69159fad5d9374b34c31b6784581b_brand.jpg
+15;Ney Material De Construção;-3.0907247;-59.9846252;-1;Rua Dom Bôsco, 166 - Coroado Manaus - AM 69080-370 Brasil;null;85_6753d0af0ed9251fcf72925c75a8d6c9_brand.jpg
+16;Loja RCA;-3.0681123426;-60.0043251738;-1;Avenida Tancredo Neves, 1274 - Parque 10 de Novembro Manaus - AM 69054-700 Brasil;null;86_b36d33eaae446f30c4c8a9128e217dc1_brand.jpg
+26;PW VIDROS;-3.0790176;-60.0223489;-1;Rua Barreirinha, 31 - Parque 10 de Novembro Manaus - AM 69050-661 Brasil;null;131_7d288f69a0110ea0add97ae01491e752_brand.jpg
+27;Drogaria 3 Irmas;-3.053083;-59.9623665;-1;Rua São Fra   Rua Joao Camara 1550 - Novo Aleixo Manaus - AM 69098-298 Brasil;null;146_e0a51b9f20e01277b3ae28ff8d0c3ec0_brand.jpg
+142;Salão  Mara;-3.0818603;-60.0118702;-1;Rua do Comércio, 36 - Parque Dez de Novembro Manaus - AM Brasil;null;142_8009027a3e42c2869f87346e6e46f6de_brand.jpg
+336;Toda Bella Moda Cristã;-3.0878402;-60.0230559;-1;manaus;92-98174-4663;336_539145030fb3600d26d6a64130310035_brand.jpg
+22;Casa Canina;-3.0818213;-60.0135263;-1;Avenida Ivanete Machado, 936 - Parque Dez de Novembro Manaus - AM Brasil;3648-0038;22_9e5d1ac8c5a6cd27e8674289259b7fa3_brand.jpg
+13;LOS Animais Pet Shop;-3.0951583;-59.9822303;-1;Avenida Beira Mar, 198 - Coroado Manaus - AM 69080-030 Brasil;993914496;13_b4d5552ab74099f25cfa16469dadd8ee_brand.jpg
+401;Belladonna;-3.109093;-60.0198458;-1;R. Rio Mar, 98 - Nossa Sra. das Gracas, Manaus - AM, 69053-120, Brasil;3642-6330;401_4c6da4418f53bb92d9a8c9e00851deb0_brand.jpg
+135;Dinâmica Empreendimentos;-3.0881397;-59.9808324;-1;Avenida Beira Mar, 58-64 - Coroado Manaus - AM 69080-030 Brasil;null;null
+137;Salão Junior Mota;-3.0897425;-59.9840541;-1;Rua Santo Antônio, 347 - Coroado Manaus - AM 69080-271 Brasil;null;137_9d7af7c9a31d165bd73bb682b09488d4_brand.jpg
+141;Ótica Brasil;-3.0806814;-60.0099133;-1;Rua Vinte e Cinco, 52 - Parque Dez de Novembro Manaus - AM 69055-430 Brasil;null;141_d185c5ed37536ac0063f735f7a15dd24_brand.jpg
+21;O;-3.0927666;-60.0404007;0;Rua das Juremas, 89 - Dom Pedro Manaus - AM 69040-290 Brasil;92-98822-3865;null
+23;Cazagro;-3.06648;-60.0249077;-1;Avenida Torquato Tapajós, 135-440 - Flores Manaus - AM Brasil;92-3654-3248;23_b6cf334c22c8f4ce8eb920bb7b512ed0_brand.jpg
+143;Cacau Show;-3.0817709;-60.0119004;-1;Rua 23, 36 - Parque Dez de Novembro Manaus - AM 69055-410 Brasil;null;143_a7ba25327ad478bf0b973dcb619cc5cd_brand.jpg
+144;Baluarte Frios E Embalagens;-3.0821199;-60.0132101;-1;Rua do Comércio, 1 - Parque Dez de Novembro Manaus - AM Brasil;null;144_fc115e30db7b1d325947f40e1cb04dac_brand.jpg
+145;Pingo Hair;-3.0409233;-59.9877408;-1;Rua 15, 44 - Cidade Nova Manaus - AM Brasil;null;145_96948ca9dd402f3142d3ebd684f2a210_brand.jpg
+147;Salão Elizandro;-3.0412065;-59.9824578;-1;Avenida Timbiras, 982 - Cidade Nova Manaus - AM Brasil;null;null
+146;Construcenter Materiais de Construção;-3.0425209;-59.9829094;10;Rua Onze, 102 - Cidade Nova Manaus - AM 69094-110 Brasil;null;146_6cc5b47d8ba45e00f9fc62d31995d88d_brand.jpg
+153;Restaurante Provera;-3.0440127;-59.9753551;-1;Rua 27, 69 - Cidade Nova Manaus - AM 69094-270 Brasil;null;153_cb6e2b922ce444cbc0b2a7b0522730cc_brand.jpg
+140;OTICA DESCONTAO;-3.0895552;-59.9822772;-1;Rua Amazonas, 237 Coroado 2 Manaus - AM 69082-541 Brasil;null;140_f1c621a775d5364fd238658437e46f11_brand.jpg
+161;Óticas Jucelino;-3.0328369;-60.00114;-1;Avenida Francisco Queiroz, 26-118 - Cidade Nova Manaus - AM 69074-020 Brasil;null;161_ae0f49ce2fc976ab30dd263afed9d95b_brand.jpg
+405;Barbosa Cabeleireiro;-3.1092202;-60.0176497;-1;R. Pará, 129 - Nossa Sra. das Gracas, Manaus - AM, 69053-070, Brazil;3584-1637;405_7eb92ec213d98be3f2f068b3fda9fcde_brand.jpg
+122;Studio Usogeek;-3.1443664;-60.0057133;-1;Colônia Oliveira Machado Manaus - AM Brasil;null;122_065a522743880e43347ab3c1ed2e00cb_brand.jpg
+150;Nerd Metaleiro;-3.0548291;-59.9479207;-1;Tancredo Neves Manaus - AM 69087-590 Brasil;null;null
+162;Embalagem S.A;-3.032296;-60.0011071;-1;Rua e, 52 - Cidade Nova Manaus - AM Brasil;null;null
+148;Consultório Veterinário Pet Show;-3.0392896;-59.981329;-1;Av. Timbiras N* 48 Nc 02 Cidade Nova 2;3088-5645;148_2808a84f91b1ae666466a4cbe2dc3d8c_brand.jpg
+93;AiPreciso Bolos Confeitados;-3.1440009;-59.9941528;-1;Rua Henrique Archer Pinto, 60 - Santa Luzia-Manaus - AM 69074-370 Brasil;null;null
+158;Salão Mania Da Beleza;-3.0440809;-59.9741888;-1;Rua 27, 86 - Cidade Nova Manaus - AM 69094-270 Brasil;null;158_508087c9dd886b6a1a82cb805c2ee328_brand.jpg
+110;Ração do Gugu;-3.0908731749;-59.9824651703;-1;Rua Amazonas, 209- Coroado II Manaus - AM 69082-541 Brasil;92-99238-1038;110_73b9805ff3d5bba1ba5aa4ad826c54ed_brand.jpg
+159;Fenix Comunicação Visual;-3.0440231;-59.9794381;-1;Rua 27, 31 - Cidade Nova Manaus - AM 69094-270 Brasil;null;159_db482604f2a41ac64ef291cd41100309_brand.jpg
+160;Salão De Beleza KF;-3.0424047;-59.9880569;-1;Rua 18, 2-22 Manaus - AM Brasil;null;160_3d5f019d33942de7fa7e82f65655c373_brand.jpg
+407;Morada do Peixe;-3.0565608805;-60.0553135814;-1;Beco Goiania, 98 - Planalto, Manaus - AM, Brasil;(92) 36549650;407_e22e4dc58724c049e90c07297f4b54ce_brand.jpg
+163;Farmácia FTB;-3.0316444;-60.0010619;-1;Avenida Francisco Queiroz, 318-444 - Cidade Nova Manaus - AM 69074-020 Brasil;null;163_64d954a7fa48963e3d4c4bdd897d94e5_brand.jpg
+152;ChocoTyna Doceria;-3.1443664;-60.0057133;-1;Rua André Carneiro Do Amaral N 72 Bairro Educandos;null;null
+168;Gomes Peças e Serviços;-3.0453647;-59.9686044;-1;Rua Cariré, 412 - Cidade Nova Manaus - AM Brasil;null;168_7e1fb63b4d2ec676b3931f371da803e3_brand.jpg
+167;Salao Solange Sampaio;-3.0452871;-59.9681904;-1;Rua 192, 450 - Cidade Nova Manaus - AM Brasil;null;167_9ce163c62424ac85f2f8bb64935f4ff8_brand.jpg
+406;Os Barbeiros;-3.1072493;-60.0190713;-1;140 - Av. João Valério, 708 - Nossa Sra. das Gracas, Manaus - AM, Brazil;3877-8669;406_edb36d0dfcce28e755847ddeab5a63f1_brand.jpg
+176;Ccs Comercio E Serviços;-3.0693440547;-60.0304713473;-1;Avenida Raimundo Parente, 70 - Da Paz Manaus - AM Brasil;92-98149-8956;176_6dac4d1bfda404b3ea6ede94dd37cb68_brand.jpg
+409;Peixaria do Bosco;-3.0626049974;-60.0416893127;-1;R. B 23, 744 - Alvorada, Manaus - AM, 69046-550, Brasil;923654-3930;409_8d7e4f52b46564c08254cf96310e42b7_brand.jpg
+408;Peixaria laranjeiras beer;-3.0674825;-60.0145126;-1;Av. Prof. Nilton Lins, 10 - Flores, Manaus - AM, Brasil;92 99238-1272;408_2f0ccf18fbf5a9090ec8dc19e370bd23_brand.jpg
+411;Amazônico Peixaria Regional;-3.093460432;-60.0248848;-1;Av. Darcy Vargas, 359 - Compensa, Manaus - AM, Brasil;(92)3236-0546;411_e52095d682b88ed8c7918caa73e22453_brand.jpg
+157;Pet & Gatô;-3.0440186;-59.9754385;-1;Rua 27, 65 - Cidade Nova Manaus - AM 69094-270 Brasil;null;157_ae3b166c302150f4def9a8176fd36460_brand.jpg
+7;Miss Pet;-3.0914981;-60.0072939;-1;Rua Cuxipiara, 2-88 - Adrianópolis Manaus - AM 69057-066 Brasil;null;36_18cd6ebfb5567eb228c7ea1e1b792099_brand.jpg
+294;Casa Bulldog;-3.0335935;-59.9864313;-1;Av Timbiras, 2-8 - Cidade Nova Manaus - AM 69090-140 Brasil;92-3645-4413;294_026550c1a758f6e7c4dfa2177c7607d7_brand.jpg
+337;Plural Produções Eventos;-3.07389189;-60.05846366;-1;Rua Hidelbrando Antony, 430-484 - Alvorada Manaus - AM Brasil;92-99448-8622;337_ba8ef86a569299b7f73d9a377758f256_brand.jpg
+344;Buffet Arte Do Sabor;-3.1190634;-60.0269854;-1;Avenida Constantino Nery, 783 - Presidente Vargas Manaus - AM Brasil;92-98134-0532;null
+352;Contém 1g Manaus;-3.1135796;-60.0347995;-1;Avenida Brasil, 4431-4449 - Santo Antônio Manaus - AM Brasil;92-99452-8060;352_213bc5570389208ae306bd2bdb4cb135_brand.jpg
+345;Loja Do Edleno;-3.0956268;-59.9977241;0;Avenida Júlio Verne, 36 - Aleixo Manaus - AM 69060-730 Brasil;00-11111-1111;null
+353;Santo Remédio;-3.1053934;-60.0230559;30;Av. Djalma Batista 946 - Nossa Senhora das Gracas Manaus - AM 69053-110 Brasil;92-3212-8000;null
+350;Loja Do Altigran 2;-3.0935638;-59.9976751;0;Rua DF, 2-114 - Aleixo Manaus - AM 69060-089 Brasil;92-98115-8342;null
+351;Loja Do Edleno 2;-3.0956599;-59.9976541;0;Avenida Júlio Verne, 36 - Aleixo Manaus - AM 69060-730 Brasil;99-99999-9999;null
+124;FRANGOTE - Frango na Brasa;-3.0872215;-60.004223;4;Avenida Efigênio Salles, 1200 - Aleixo Manaus - AM 69060-020 Brasil;null;124_ca0d307b5f3733b4fbedde81a4e6c816_brand.jpg
+432;Carmen Mega Studio Hair;-3.1065355;-60.0121332;-1;R. Belo Horizonte, 154 - 1 - Adrianópolis, Manaus - AM, Brazil;92 3658-4721;432_b77482fb284cc29170c6c1140e46ce9d_brand.jpg
+354;Central Pague Menos;-3.0878402;-60.0230559;34;Djalma Batista 874 - Parque Dez de Novembro Manaus - AM 69050-010 Brasil;92-4002-8282;null
+87;Papier de Projet;-3.1229661727;-60.0056273863;-1;Avenida Parintins, 489 - Cachoeirinha Manaus - AM 69065-050 Brasil;null;87_c2378cccd8207f073caef431ad33f82d_brand.jpg
+298;UP Tech - Soluções em Informática;-3.0159463;-59.9652559;-1;Travessa Lene, 8, Quadra 15 - Cidade Nova Manaus - AM 69097-170 Brasil;92-98403-4339;298_519edc6f937ba100d6e358c6a3f5ef3c_brand.jpg
+346;Loja do Altigran;-3.0885251;-59.9645787;0;Estrada de Acesso A Universidade do Amazonas, 2620-3002 - Coroado Manaus - AM Brasil;09-29815-8342;null
+355;Zenilson Obras E Reformas;-3.0751216;-60.0651119;-1;Rua 9, 17 - Lírio do Vale Manaus - AM 69038-279 Brasil;92-99212-1665;null
+375;Point Sushi - Vieralves;-3.10718381;-60.0194997;-1;Av. João Valério, Viera Alves.;92-99417-0015;375_abe2647396099860195311ed00bf1792_brand.jpg
+134;DuCaboco - Café Regional;-3.10630079;-60.01860247;-1;Avenida Rio Itannana, 389 - Nossa Senhora das Gracas Manaus - AM 69053-040 Brasil;92-99217-9176;134_b2a6719591fa7e51999209d40c434797_brand.jpg
+286;Agrovida Pet Shop Filial Campos Eliseos;-3.0710956;-60.0468153;-1;Avenida Constantinopla, N50 -  Bairro Planalto  Manaus - AM Brasil;92-99397-9392;286_5b9c3f2fc1a1d0630d98691ae085f143_brand.jpg
+357;Animados Pet Móvel;-3.0890952;-60.0635306;-1;Av. Coronel Texeira S/N Ponta Negra - Manaus - AM 69037-000 Brasil;92-98245-5098;null
+358;Animal Society Pet Shop;-3.1136299;-60.0057133;-1;Rua Valério B. De Andrade, 245 - São Francisco Manaus - AM 69079-260 Brasil;92-9141-3995;null
+359;Bichomania;-3.1235222391;-60.006162487;-1;Avenida Carvalho Leal, 1351 - Cachoeirinha Manaus - AM 69065-001 Brasil;92-3084-7109;null
+360;Cão Beleza;-3.1107028404;-60.048667118;-1;Avenida Brasil, 3287 - Compensa Manaus - AM 69036-110 Brasil;92-3625-6442;null
+361;Casa Beagle;-3.0771162961;-60.0083672628;-1;Avenida Tancredo Neves, 9 - Parque 10 de Novembro Manaus - AM 69054-040 Brasil;92-99168-6781;null
+362;Livraria Concorde;-3.1338751988;-60.0220146775;-1;Rua Henrique Martins, 453 - Centro Manaus - AM Brazil;92-3215-3636;null
+412;Tambagrill Peixaria;-3.0891147;-59.9953387;-1;Av. Efigênio Salles, 2600 - Aleixo, Manaus - AM, 69060-020, Brasil;92 33433-343;412_08c09d19a17f1fcd588ae5bf363cc58f_brand.jpg
+371;Mega Store (Amazonas Shopping);-3.0941393654;-60.0226617604;-1;Avenida Djalma Batista, 482, 1º Piso, Loja 124;92-3301-4450;371_64df8c1811ae31404b7f1aa38e9b8145_brand.jpg
+364;Amazon Print (Manaura Shopping);-3.1039820681;-60.0113015994;-1;Avenida Mário Ipiranga 1300 - 53 - Adrianópolis Manaus - AM Brasil;92-2123-9595;364_2dd75ba6f6a13cdc358619e6de6a7ea1_brand.jpg
+363;Amazon Print;-3.1164095209;-59.9831635505;-1;Avenida Rodrigo Otávio, 4455 - Japiim Manaus - AM Brasil;92-2123-9595;363_fd25bc9ea20d1e424daa4587af5f674a_brand.jpg
+377;Pizza Hut;-3.1002723173;-60.0239894539;-1;Avenida Djalma Batista, 1854 - Chapada Manaus - AM 69050-010 Brasil;92-4009-0500;377_704752794cf8d1c6d882199a0406d328_brand.jpg
+376;Pizzaria Di fiori;-3.0672686575;-60.0140290707;-1;Avenida Professor Nilton Lins, 1560- Parque Da Laranjeiras Manaus - AM Brasil;92-3654-5101;376_8bde293bff94ee5ffd70a6468d50f40f_brand.jpg
+365;Info Store;-3.1247425044;-59.9833724275;-1;Avenida Rodrigo Otávio, 3555 - Distrito Industrial Manaus - AM 69073-000 Brasil;92-3613-1013;365_2bb4efa633e405670a0cc13bed024821_brand.jpg
+366;Info Store (Manauara Shopping);-3.1042713216;-60.0116620213;-1;Avenida Mário Ipiranga - Adrianópolis Manaus - AM Brasil;92-3305-3400;366_d3e0a9da293c2b8decb2b6a4e1572a1c_brand.jpg
+367;Livraria Lira;-3.1341222625;-60.0228112936;-1;Rua Henrique Martins, 396 - Centro Manaus - AM 69010-010 Brazil;92-2121-0200;null
+368;Livraria Empório Center;-3.1320409664;-60.0223234668;-1;Rua Costa Azevedo, 85 - Centro Manaus - AM 69010-230 Brazil;92-3631-7370;null
+369;True Data;-3.0965076486;-60.0253298879;-1;Av Djalma Batista - 735 - Chapada Manaus - AM 69050-082 Brasil;92-3643-8800;369_e8b9e5427059c326c4deed7ffa00a4a7_brand.jpg
+370;Infoam Informática;-3.1232082173;-60.0203470141;-1;Avenida Tarumã, 731 - Centro Manaus - AM Brasil;92-3232-2094;370_e2a50c29586f837767dd1819e36e490e_brand.jpg
+455;Depex Copiadora e Papelaria;-3.1095695;-60.0239141;-1;Av. Djalma Batista, 539 D - São Geraldo, Manaus - AM, 69053-355, Brazil;92 35841897;null
+372;Info Store (Sumaúma Park Shopping);-3.0303149339;-59.9773243815;-1;Avenida Noel Nutels - Cidade Nova Manaus - AM Brasil;92-3212-9918;372_63deeaf6f5831e1ecd0876fc8e95d054_brand.jpg
+156;Pet & Gatô  Petshop;-3.0441748;-59.9743306;-1;Rua 27, 86 - Cidade Nova Manaus - AM 69094-270 Brasil;null;156_be8d35047027fc5dc2fe53188f9f9fac_brand.jpg
+164;casa pet faro;-3.0313538;-59.999391;-1;avenida Francisco Queiroz, n 518 casa B , cidade Nova;3656-5978;164_33e8fd8bc4cd2088dcd3d081070db51a_brand.jpg
+374;Mega Pet Store;-3.1030356326;-60.0102987885;-1;Avenida Humberto Calderaro, 2 - Adrianópolis Cep 69057-015 Manaus - AM Brasil;92-3236-7003;374_075868b50a820cca606466b7adb7fde6_brand.jpg
+378;Coliseu Pizzaria;-3.1092860416;-60.0170609728;-1;Rua Pará, 438 - Nossa Senhora das Gracas Manaus - AM Brasil;92-3234-8888;378_632ecb8f470c1fae6981db2261b052b1_brand.jpg
+387;Papelaria Pap Tip;-3.116118262;-60.0206655264;-1;Avenida Alvaro Maia, 722 - Manaus - AM Brazil;92-3232-3124;null
+379;Frango Express;-3.0916030134;-60.006904453;-1;Avenida Guilherme Paraense, 21-23 - Adrianópolis Manaus - AM Brasil;92-99201-1818;379_6018672317abdf55d7fc91c67220260f_brand.jpg
+385;Crêpe Bistrô;-3.1023205;-60.0223784;-1;Rua Rio Içá, 12 - Nossa Senhora das Gracas Manaus - AM 69053-100 Brazil;92-98455-3030;null
+380;Splash Pizza;-3.0849812177;-60.0003558397;19;Avenida Efigênio Salles, 5000 - Aleixo Manaus - AM 69060-020 Brasil;92-3642-5000;380_fd81a4910f393b41d4cf0726819b48c1_brand.jpg
+384;Mr Pizzo;-3.0927666;-60.0404007;-1;Av Pedro Texeira 931 - Dom Pedro Manaus - AM 69040-000 Brasil;92-3878-7777;384_fdff679a8e3d53707a47e310504d7b42_brand.jpg
+381;Cantina Guiotto;-3.0751701442;-60.0079132989;-1;Avenida Tancredo Neves, 6 - Parque Dez de Novembro Manaus - AM 69054-040 Brasil;92-3632-2008;381_d4ec874b321c97123798a871a7728bb0_brand.jpg
+382;Mangiare Pizzaria;-3.1043576959;-60.0188469887;-1;Rua Das Ametistas, 6 - Nossa Senhora das Gracas Manaus - AM Brasil;92-99120-6050;382_113493df95b678cfaebe391645db2073_brand.jpg
+383;Loppiano Pizza;-3.1175109475;-60.0167545304;-1;Rua Major Gabriel, 1080 - Centro Manaus - AM 69053-590;92-3642-1234;383_858733c1b534a285934141ee2d3253b9_brand.jpg
+389;Amanda Beauty Center;-3.1036723926;-60.013455078;-1;Avenida Mário Ypiranga, 1068-1074 - Adrianópolis Manaus - AM Brasil;92-3236-4727;389_f3b78d774fb52f9133479c39710b58e7_brand.jpg
+373;Fisiocenter;-3.0923463;-60.0136762;-1;Av. João Valério, 53 - Nossa Sra. das Gracas, Manaus - AM, 69053-140;92-3622-7311;373_f6ad655dd3e405b263c633f804872c01_brand.jpg
+386;WorldShops;-3.1025169;-60.0595097;-1;Rua São José, 220 - Compensa Manaus - AM 69035-280 Brasil;92-99437-5900;386_de9605b48d35344d697ef723de9e20a1_brand.jpg
+388;Óticas Paiva;-3.0768169;-60.0400845;-1;Rua Criciúma, 49-A - Alvorada Manaus - AM Brasil;92-3348-5537;388_0ef7d71cc52d9ddee489697b720d3106_brand.jpg
+391;Bicho Travesso;-3.0792308448;-60.0375275686;-1;Avenida B, 24 - Alvorada Manaus - AM 69043-050 Brasil;92-9933-4510;null
+392;Casa Da Ração;-3.0817732527;-60.0136176869;-1;Avenida Ivanete Machado, 938 - Parque Dez de Novembro Manaus - AM Brasil;92-99971-4277;null
+390;Centro de Beleza Exuberante;-3.0936790327;-59.9891468883;-1;Avenida André Araújo, 2854-3044 - Aleixo Manaus - AM Brasil;92-98409-1467;390_66e5b430ed193b3c97e183de252d4adc_brand.jpg
+393;Casa Doberman;-3.145587227;-59.9997225031;-1;Avenida Rodrigo Otávio, 46 - Japiim II Manaus - AM Brasil;92-3237-3322;null
+456;Totem Papelaria;-3.0859075;-60.040875;-1;Av. Dom Pedro I, 325 - Dom Pedro, Manaus - AM, 69040-040, Brazil;9236587313;null
+394;Peixaria Zagaia;-3.0628041461;-60.0474671647;-1;Rua Santiago, 17 - Planalto Manaus - AM 69045-552 Brasil;92-3184-2973;394_2989bd017e1299e3baaa32aafad2bac5_brand.jpg
+404;Dom Peixe Peixaria Regional;-3.0859624963;-60.0429173328;-1;R. Tiradentes, 429-485 - Dom Pedro, Manaus - AM, 69040-060, Brasil;9298414-1081;404_e973fbad33271e6a88cff9a9b202542f_brand.jpg
+618;Infoplanet - Automação Comercial;-3.100113;-60.056797;-1;R. São João, 93 - Compensa, Manaus - AM, 69035-030, Brasil;92-3673-1330;618_58873a21653c948ade5a22455608598f_brand.jpg
+398;Maison Luh Estética e Beleza;-3.1077785;-60.0206296;-1;Av. Rio Madeira, 197 - Vieiralves, Manaus - AM, 69053-030, Brasil;3584-4182;398_33b8d8a2c5a055cf482b305d4caf671a_brand.jpg
+399;Cabral Coiffeur;-3.1108025;-60.0235413;-1;Av. Djalma Batista, 482 - Chapada, Manaus - AM, 69050-010, Brasil;3637-6565;399_2191b0457b51692049fca7e1bb5c4aca_brand.jpg
+397;Salão Vip;-3.1287598284;-60.0276355818;-1;Rua Luiz Antony, 457 - Aparecida Manaus - AM 69010-302 Brasil;92-9186-5737;null
+619;Usina dos Kits;-20.3518125;-40.3146367188;-1;Rua Hortílio Carvalho, 2-44 - Ibes, Vila Velha - ES, Brasil;27-3534-1484;null
+492;Drogaria Jéssica;-3.121538;-60.0367361;-1;R. Lourival Muniz, 418 - Glória, Manaus - AM, 69027-640, Brazil;92 9929-08412;492_fce46c79430b358de3a80f406dd5762d_brand.jpg
+413;Sushi Ponta Negra;-3.0936296;-60.0517031;-1;Av. Coronel Teixeira, 1200 - Nova Esperança, Manaus - AM, Brasil;92 36467-179;413_e8aea12aa092d7d6f6dc6c2bc8de248d_brand.jpg
+420;Japa food - vieralves;-3.1049861412;-60.0219824482;-1;R. Rio Jutaí, 5 - Nossa Sra. das Gracas, Manaus - AM, 69053-020, Brasil;92 98230-8558;420_334dfcb68de48abb6b44320c8226ade8_brand.jpg
+457;FTD Educação;-3.1056887;-60.0067166;-1;Av. André Araújo, 477 - Adrianópolis, Manaus - AM, 69075-025, Brazil;92 3664 6840;null
+414;Sushi & Espeto;-3.0896059;-60.0090492;-1;Av. Efigênio Salles - Adrianópolis, Manaus - AM, 69057-050, Brasil;92 33468-215;414_260631627f9d30dd86c01459a560a81e_brand.jpg
+415;Matsuri Sushi bar;-3.0760396578;-59.9933237198;-1;R. Osaka, 57-127 - Parque 10 de Novembro, Manaus - AM, 69054-296, Brasil;92981187135;415_74727299bd65096c778878b64b9d6096_brand.jpg
+504;Capodarte;-3.0878402;-60.0230559;-1;Av Djalma Batista Loja 435/436 - Parque Dez de Novembro;92-9972-7063;504_28540ba9a65ce2b80d59a6f899496b71_brand.jpg
+502;Sakura Sushi Bar;-3.0852407;-60.0264158;-1;Av. Constantino Nery, 4537 - Flores, Manaus - AM, Brasil;92-99441-5479;502_e3832d29e503468feec3301f97182cd4_brand.jpg
+424;Espaço Amanda - Pq10;-3.1108025;-60.0235413;-1;Av Tancredo Neves, 645, Loja: 18 A. Pavmto: 1 Do Parque 10 Mall., Parque 10 De Novembro, Manaus, AM, CEP 69054-700, Brasil;92 994640518;424_87ea2723c3224cec75762ef724a93af4_brand.jpg
+501;Beny Materiais de Construção;-3.1156135;-60.0140897;-1;Av. Boulevard Álvaro Maia, 1447 - Praça 14 | Manaus - AM Brasil;92-2129-0800;501_4a7ae1db1cbf8318e6e600e1fe31ab40_brand.jpg
+503;Jóias Rommanel Helen;-3.0884982;-59.9643858;-1;Estrada de Acesso A Universidade do Amazonas, 2620-3002 - Coroado Manaus - AM Brasil;92-99225-5951;null
+395;Salão Belle Femme;-3.0722032016;-60.0021646544;-1;Rua Nikita Kruschev, 18 - Parque Dez de Novembro Manaus - AM Brasil;92-99246-3574;395_e5cbd0e51a870605ff35d95a8aeb78e5_brand.jpg
+416;Kani Sushi;-3.1067418;-60.0198521;-1;R. Rio Mar, 530 - Nossa Sra. das Gracas, Manaus - AM, Brasil;(92)981435798;416_7f20999de5ab5c8870acf58cd5b5bee2_brand.jpg
+500;Brigadeiros E Trufas;-3.0882655049;-59.9645674601;1;Estrada de Acesso A Universidade do Amazonas, 2620-3002 - Coroado Manaus - AM Brasil;92-98122-3874;500_5d44ba26af4201e613dee80bc9fd9347_brand.jpg
+356;Natura Digital - Loja Online Vilza;-3.0830948;-60.0114939;-1;https://m.rede.natura.net/espaco/vilzalins;92-98113-5109;356_d213489723bb718d6d697a2830283ad0_brand.jpg
+396;Snack Rock Burguer;-3.0660449781;-60.0131201372;-1;Rua Rio Grande do Sul, 13 - Flores Manaus - AM 69058-490 Brasil - Laranjeiras​ Food Park;92-99186-3554;396_052f48e1a3e142753ba8e412a2e8f594_brand.jpg
+505;PB KIDS Amazonas Shopping;-3.0943552;-60.0220171;-1;Avenida Darcy Vargas, 344 - Compensa Manaus - AM 69030-060 Brasil;92-3236-3980;505_0804a5612da93060569b5221481d6609_brand.jpg
+524;Tropical Multiloja;-3.1332271;-60.0236373;-1;Rua Saldanha Marinho, 516 - Centro Manaus - AM 69010-040 Brazil;92-3234-2999;null
+525;DLI Manaus;-3.0878402;-60.0230559;0;Cond. Amazonas Flat Service - Av. Djalma Batista, 3000 - Chapada, Manaus - AM, 69050-010;92-3621-3515;525_76d336956f2041cfa42e6a4aa2340bb7_brand.jpg
+626;Lanchonete Sortidinho;-3.0355066;-59.9978133;-1;Av. Noel Nutels, 337 - Cidade Nova, Manaus - AM, Brasil;92-3645-4723;null
+516;Crocs Amazonas Shopping;-3.0945091;-60.0219978;-1;Amazonas Shopping;92-3343-3791;516_d814f4e3dcf9e6f473e213232b9ba115_brand.jpg
+421;Os Barbeiros - Pq10;-3.0809952;-60.0102089;-1;R. do Comércio, s/n - Parque 10 de Novembro, Manaus - AM, 69055-000, Brazil;92 3877-8669;421_0bc0659f4f2e71c7ec70774c6b0e26a1_brand.jpg
+417;Fast Temaki - Delivery;-3.0908832;-60.0122343;-1;Av. Efigênio Salles, 440 - Adrianópolis, Manaus - AM, 69057-050, Brasil;9236436768;417_0a9d736c1b4565ac2fd7fd17a6279d88_brand.jpg
+527;Foto Nascimento Amazonas Shopping;-3.0878402;-60.0230559;-1;Amazonas Shopping;92-3215-5210;527_a6e8f5453686e9c1860c95eec27d6def_brand.jpg
+528;Havainas;-3.0878402;-60.0230559;-1;Rua Rondônia, 24 - Parque Dez de Novembro Manaus - AM 69050-530 Brasil;92-8188-1557;null
+419;Mr. Temaki;-3.0491759;-59.9826885;-1;Av. Timbiras, 92 - Cidade Nova, Manaus - AM, Brasil;92 33027-570;419_b054e6d978ad5a50a5edcd41347a6d82_brand.jpg
+422;Os Barbeiros - Distrito;-3.1295031;-59.9853179;-1;Av. Rodrigo Otávio, 2890 - 11 - Distrito Industrial, Manaus - AM, 69075-005, Brazil;92 3237-7189;422_04773bb6bb45e6bcd886517fe5c7f0f1_brand.jpg
+425;Espaço Amanda - Pátio Gourmet;-3.1067885;-60.0239457;-1;Av. Djalma Batista, 1511-1203 - Nossa Sra. das Gracas, Manaus - AM, Brazil;92 996150304;425_db514cbe5f6d664a0fff1d2db155edda_brand.jpg
+530;Sucuri Pesca & Aventura;-3.0878402;-60.0230559;-1;Av Djalma Batista, 482 , Loja 332- Parque Dez de Novembro Manaus - AM 69050-010 Brasil;92-3236-3784;null
+423;Amanda Beauty Millenium;-3.1013235;-60.0250834;-1;Millennium Shopping - Av. Djalma Batista, 1661 - Loja 264 - Chapada, Manaus - AM, 69055-010, Brazil;92 984140803;423_7be3083f3f0fa6ed3cb370d394db4247_brand.jpg
+531;Yogumania Amazonas Shopping;-3.0878402;-60.0230559;-1;Amazonas Shpping 2o Piso;92-3667-7357;531_3fe67c056f9a2da2b87bd0a0177efb9a_brand.jpg
+533;Rommanel;-3.0947205;-60.0227398;-1;Rua Amadeu Castro, 50 - Parque 10 de Novembro Manaus - AM 69050-650 Brasil;92-3211-3349;null
+427;Studio Up;-3.094985;-59.9948754;-1;Av. Via Láctea, 1 - Aleixo, Manaus - AM, 69060-085, Brazil;92 98130-060;427_070749e148388d846d7a0ec27ffb17b7_brand.jpg
+426;Espaço Amanda - Cidade Nova;-3.0309543;-59.9772408;-1;Av. Noel Nutels, 1762 - 1009 - Cidade Nova, Manaus - AM, Brazil;92 992847836;426_b6dcaa50f9f37b62c29647512dcf7c17_brand.jpg
+429;Jô Cabelereira;-3.0829892;-60.0101772;-1;R. Safira Braga - Parque Dez de Novembro, Manaus - AM, Brazil;92 98158-5310;429_335782b2e058aea59dd51d70de163c59_brand.jpg
+428;Dedo de Moça;-3.0806178;-60.0085294;-1;Rua do Comércio II - Parque Dez de Novembro, Manaus - AM, Brazil;92 98454-413;428_b73c4a5534c2c5cb68d466d2ea3c5537_brand.jpg
+430;Vila Belle Espaco para Beleza;-3.1053296;-60.0187842;-1;R. Acre, 145 - Nossa Sra. das Gracas, Manaus - AM, 69053-130, Brazil;92 981784444;430_eb28647cb85b7978762486314fe78c78_brand.jpg
+431;Gata Pintada Esmalteria e Salao de Beleza;-3.0807613;-60.0126634;-1;R. Dom Milton Correia Pereira, 1014 - Parque Dez de Novembro, Manaus - AM, 69055-440, Brazil;92 3342-2135;431_7c78b12691f2b2a94639b7674eba07e4_brand.jpg
+532;Arco Iris Surf Wear;-3.0878402;-60.0230559;-1;Av. Djalma Batista, 482 Loja 420M Amazonas Shopping;92-3236-3712;532_53f4e486621c6942b97c6cc7246eba29_brand.jpg
+433;Studio Sis;-3.0741621;-60.0325416;-1;Av. Des. João Machado, 597 - Alvorada, Manaus - AM, Brazil;92 981211720;433_036857440e2ca0fb29de2590871e8fc9_brand.jpg
+529;Di Donna;-3.0943392;-60.0226043;-1;Avenida Djalma Batista, 482 - Parque 10 Manaus - AM 69030-060 Brasil;92-98241-0403;529_c045ce0e9d10f68fe7cc28dc1ca9aac9_brand.jpg
+448;Chefão Barbearia;-3.0640144;-60.0398876;-1;Av. Cravina dos Poetas, 454 - Alvorada, Manaus - AM, 69048-520, Brazil;92 98182-0084;448_42889245f2386e739ec60bf2917bd1e2_brand.jpg
+434;Villa Angel;-3.1071486;-60.0193669;-1;R. Rio Juruá, 345 - Nossa Sra. das Gracas, Manaus - AM, 69053-180, Brazil;92 3584-3252;434_7f6d1518103ec15b60bcd92791854798_brand.jpg
+435;Dondokas Salao de Beleza;-3.1088039;-60.0173382;-1;Av. Rio Jamary, 30 - Ns. das Graças, Manaus - AM, 69053-560, Brazil;92 984645151;null
+442;Luluzinhas Nails & Hair;-3.089184;-60.0143426;-1;Tv. Grande Otello - Parque Dez de Novembro, Manaus - AM, Brazil;92 3307-0073;442_2ff9b7f6e89fd7b705a0336d406c3fba_brand.jpg
+436;Mazala Hair Stylist;-22.9002389;-43.7227575;-1;Rua Maria Callas 15 Parque Dez Manaus AM;92 982567553;436_2be53d85331104afc70be37b0e3a02ba_brand.jpg
+438;Claudia Aguiar Centro de Beleza;-3.0080712;-59.9719773;-1;Av. Nepal, 72 - Cidade Nova, Manaus - AM, 69097-362, Brazil;92 992097689;438_e8aeea818b47e37483bcce08156d1442_brand.jpg
+446;Espaço Belíssima;-3.0870949;-60.0132716;-1;Av. Maneca Marques, 141 - Parque Dez de Novembro, Manaus - AM, 69055-021, Brazil;(92)991399169;446_7918b6591542aa4ccc78406d6aef1840_brand.jpg
+439;Vidal Sthetic Hair;-3.068277;-60.0046306;-1;Av. Tancredo Neves, 7 - Parque 10 de Novembro, Manaus - AM, 69054-700, Brazil;92 991434757;439_583ebebda1561335a8bf03d9a7268cba_brand.jpg
+443;SôBella Hair & Esthetic Studio;-3.0921008;-60.0058363;-1;R. C 3, 36 - Adrianópolis, Manaus - AM, 69057-310, Brazil;92 3347-9600;443_4bbbe6cb5982b9110413c40f3cce680b_brand.jpg
+440;Studio Aretha;-3.0868204;-60.0400856;-1;Havan Center, Sala 01 - R. Rodrigues Alves, 19 - Dom Pedro, Manaus - AM, 69040-190, Brazil;92 991642656;440_9c77183f2650404f21cb5fa29bf0eee9_brand.jpg
+441;Espaço Glamour SarahLima;-3.0768084;-60.0131211;-1;R. Perimetral, 21 - Parque 10 de Novembro, Manaus - AM, Brazil;92 99490-4388;441_b9150ac571b128bcafe4b2792c2b4d5d_brand.jpg
+444;Claudete Hairstylist;-3.0979826;-60.0096446;-1;Av. Jorn. Umberto Calderaro Filho, 136 - Adrianópolis, Manaus - AM, 69057-015, Brazil;(92)993364646;444_75160441dac36621e457524200696cf7_brand.jpg
+445;Salão e Barbearia Souza;-3.0917157;-60.0374176;-1;Rua Paxiúba, 2-198 - Dom Pedro, Manaus - AM, Brazil;92 99474-2941;445_4cffaf52be8122102d348ca62963e1cb_brand.jpg
+447;Salão Bella Pelle;-3.0809952;-60.0102089;-1;R. do Comércio, s/n - Parque 10 de Novembro, Manaus - AM, 69055-000, Brazil;(92)9185-1274;447_0130f3483d5e3e43cdc5646ba62e0d2d_brand.jpg
+450;El Barbero;-3.0923676;-60.0468401;-1;Av. Pedro Teixeira, 351 - Dom Pedro, Manaus - AM, Brazil;(92) 98170-35;450_5d37cf042fe001df5277056bb749d414_brand.jpg
+453;Papelaria Feliz Aniversário;-3.0808086;-60.0095552;-1;R. do Comércio, 47 - Parque Dez de Novembro, Manaus - AM, Brazil;32365719;null
+451;Karol Beauty Center;-3.061909;-59.9460181;-1;R. G, 94 - São José Operário, Manaus - AM, 69085-600, Brazil;92 99229-6661;451_d77be0164724055a37434b2d3cdac42f_brand.jpg
+452;Studio 21 Pub & Hair;-3.0818209;-60.0136585;-1;Av. Ivanete Machado, 878 - Parque Dez de Novembro, Manaus - AM, Brazil;92 98110-8444;452_b7c98a0ad696373a247ef7579914017e_brand.jpg
+454;Petit Papelaria Fina;-3.0918659;-60.0056179;-1;Av. Guilherme Paraense, 36 - Adrianópolis, Manaus - AM, Brazil;3083-5273;null
+458;Livraria Concorde;-3.0309543;-59.9772408;-1;Av. Noel Nutels, 1762 - Cidade Nova, Manaus - AM, Brazil;9232163270;null
+459;R.P.V. da Amazônia;-3.1201717;-60.0161139;-1;Av. Nhamundá, 567 - Centro, Manaus - AM, 69025-190, Brazil;9232116200;null
+547;Rommanel;-3.0947205;-60.0227398;-1;Rua Amadeu Castro, 50 - Parque 10 de Novembro Manaus - AM 69050-650 Brasil;92-3211-3349;null
+460;Maxpel;-3.130466;-60.0026373;-1;R. Carmen Miranda, 428 - Cachoeirinha, Manaus - AM, 69065-160, Brazil;92  3133 6200;null
+461;Rymo da Amazônia;-3.1327662;-60.005623;-1;Av. Ajuricaba, 1005 - Cachoeirinha, Manaus - AM, 69065-110, Brazil;92  2101 9292;null
+462;Santo Remédio - Dom Pedro;-3.08817;-60.0383095;-1;Av. Pedro Teixeira, 68 - Dom Pedro, Manaus - AM, Brazil;92 98188-8000;462_9bc6f451b6d7b91b2ca528fb59bffcb6_brand.jpg
+468;Farmabem - Alvorada;-3.0799385;-60.0289441;-1;Rua Loris Cordovil, 1 - Alvorada, Manaus - AM, 69043-010, Brazil;92 3215-2332;468_9fead9d0a7f8bd94e6ba9cbc324a0c67_brand.jpg
+463;Santo Remédio - Japiim;-3.113734;-59.980805;-1;Av. Penetração, 76 - Japiim, Manaus - AM, 69077-738, Brazil;92 98188-8000;463_90db05b4177fe67f4b4ea799b1d9a702_brand.jpg
+466;Farmabem - Cidade Nova;-3.0360184;-60.0006448;-1;Av. Noel Nutels, 22 - Cidade Nova, Manaus - AM, Brazil;92 3216-6010;466_b3f9b9ab0194cde4eed1e5c668cf14bb_brand.jpg
+464;Drogaria Santo Remédio São José;-3.05604;-59.947623;-1;Av. Autaz Mirim, 23 - Tancredo Neves, Manaus - AM, 69087-215, Brazil;92 98188-8000;464_4936cf0784ee8e672267bab7066137c5_brand.jpg
+465;Chef Tony Cantina;-3.1029889;-60.0228251;-1;Rua Rio Eiru, 101 - Nossa Sra. das Gracas, Manaus - AM, 69053-520, Brasil;9233487482;null
+471;Farmabem - Djalma Batista;-3.1035732;-60.0242479;-1;Av. Djalma Batista, 1255 - São Geraldo, Manaus - AM, 69053-140, Brazil;92 3214-5970;471_7a33a60c9b08b1ccb1864427d9d9af31_brand.jpg
+467;Farmabem - Parque 10;-3.0784255;-60.0027776;-1;Rua 22 - Parque Dez de Novembro, Manaus - AM, Brazil;92 3216-5707;467_c3bd0ae911b54f689150507798c1fa16_brand.jpg
+470;Farmabem - Ponta Negra;-3.0686545;-60.0947409;-1;Av. Coronel Teixeira, 7581 - 23 - Ponta Negra, Manaus - AM, 69030-480, Brazil;92 3216-2400;470_4930def09148749189a50e9e4a8cfa64_brand.jpg
+469;Farmabem - Vieiralves;-3.104951;-60.0224879;-1;R. Acre, 11 - Nossa Sra. das Gracas, Manaus - AM, Brazil;92 3215-2344;469_8ad38a1a11049eebeedee652e1253973_brand.jpg
+472;Farmabem - Paraíba;-3.0979826;-60.0096446;-1;Av. Jorn. Umberto Calderaro Filho, 136 - Adrianópolis, Manaus - AM, 69057-015, Brazil;92 3216-5706;472_4de78691553567a9b9e20fde6667773b_brand.jpg
+473;Farmabem - Parque 10;-3.0850738;-60.0155772;-1;Av. Carlota Joaquina, 186 - Parque Dez de Novembro, Manaus - AM, Brazil;92 3216-1307;473_187b7c9baf7a2ff667ad9ac4401abe8b_brand.jpg
+474;Farmabem - Alvorada;-3.0719535;-60.0447171;-1;Av. Des. João Machado - Alvorada, Manaus - AM, 69043-000, Brazil;92 3216-3012;474_9e78c3731cf0b32058b913bb5bb370b1_brand.jpg
+481;Bioexata - Mario Ypiranga;-3.1077138;-60.0130653;-1;Av. Mário Ypiranga, 894 - Adrianópolis, Manaus - AM, 69057-000, Brazil;92 3084-7658;481_42359bfd5918e74edb10966a9bc45db6_brand.jpg
+475;Drogaria Katyane;-3.1100354;-59.9941952;-1;R. Benjamin Constant, 724 - Petrópolis, Manaus - AM, 69063-010, Brazil;92 3611-2535;475_92b4ce5e1050e32168c565b71f117a05_brand.jpg
+476;Salud Drogaria;-3.1166669;-59.9722476;-1;Avenida Buriti, 12 - Distrito Industrial, Manaus - AM, 69059-660, Brazil;92 3613 4400;476_8d6a7e281a2df3e250329447b3dd03c3_brand.jpg
+550;Rommanel Amazonas Shopping;-3.0878402;-60.0230559;-1;Av Djalma Batista  - Parque Dez de Novembro Manaus - AM 69050-530 Brasil;92-3211-3346;null
+477;Drogaria Nazaré;-3.106516;-60.0124269;-1;R. Belo Horizonte, 55 - Adrianópolis, Manaus - AM, Brazil;92 3611-1581;477_ca9e723b08fa69b78e1e6ee9d1aef07d_brand.jpg
+548;FUN FESTAS AMAZONAS SHOPPING;-3.0036731;-60.0434725;-1;Av. Djalma Batista - 402 - Chapada- Manaus - AM 69050902 Brasil;92-99425-9557;548_403eec4e0b81ab13cbf5a2452923f49c_brand.jpg
+551;DLI Vitória;-20.2850907;-40.2960984;0;Avenida Anísio Fernandes Coelho, 943-959 - Jardim da Penha Vitória - ES 29060-670 Brasil;92-99321-5130;551_7be573cdfabaa25a0b625fd78851bfe8_brand.jpg
+558;Objeto de Papel Am Shopping;-3.0939495;-60.0221978;-1;Avenida Darcy Vargas, 318-344 - Compensa Manaus - AM 69030-060 Brasil;92-3634-3768;558_27e4b5be6cd760565eee52352416e71a_brand.jpg
+553;Vendo Coisas;-3.0905051;-59.9971715;-1;Rua Parque dos Rios, 2-364 - Aleixo Manaus - AM 69060-760 Brasil;92-98112-1813;553_876b8631ad44109a72a1821e72e32402_brand.jpg
+560;Sketch Amazonas Shopping;-3.0941804;-60.0230108;-1;Avenida Darcy Vargas, 318-344 - Compensa Manaus - AM 69030-060 Brasil;92-3236-1947;560_cb9e660009785e654ec969ee9f432a78_brand.jpg
+627;Barbearia Popular;-3.0808175;-60.0095195313;-1;Rua do Comércio II, 47 - Parque Dez de Novembro, Manaus - AM, Brasil;92-99113-9580;627_cbd3cbc2cbd6ae9c6c2d751739a82c85_brand.jpg
+552;DLI Brasília;-3.7471897;-38.5237472;0;Rua Alcantaras, 162-226 - Fatima Fortaleza - CE 60055-350 Brasil;92-98181-6668;null
+556;I9LifeManaus;-3.0296552;-59.9627728;-1;Avenida Camapuã, 389 - Cidade Nova Manaus - AM 69097-720 Brasil;92-99458-0229;null
+557;Lacoste Amazonas Shopping;-3.094279;-60.0228753;-1;Amazonas Shopping;92-3642-5087;557_6cd60311b5c2dbd4b1078de471af563a_brand.jpg
+559;Calvin Klein Jeans Amazonas Shopping;-3.0944603;-60.0231914;50;Avenida Djalma Batista, 2339 - Chapada Manaus - AM 69050-010 Brasil;92-3236-0500;559_e8d8c216c68c55e11e78aa3036d41900_brand.jpg
+562;Carmen Steffens;-3.094279;-60.0228752;-1;Avenida Darcy Vargas, 318-344 - Compensa Manaus - AM 69030-060 Brasil;92-3236-6515;562_e8e66f3f870934c24b1604f32b0bed24_brand.jpg
+583;Sonhos dos Pés;-3.0946937732;-60.0227827951;10;Rua Amadeu Castro, 50 - Parque 10 de Novembro Manaus - AM 69050-650 Brasil;92-12345-6789;null
+487;Drogaria Castanheira;-3.0716012;-59.945836;-1;Alameda Cosme Ferreira, 5998 - Aleixo, Manaus - AM, Brazil;92 99148-8987;487_814432a35e841c9d81867c984ec17849_brand.jpg
+488;Drogaria Santa Maria;-2.9853433;-60.012991;-1;R. Samambaia, 03 - Santa Etelvina, Manaus - AM, 69059-500, Brazil;92 3646-0371;488_18720af958ce73789a807bae30ab76bb_brand.jpg
+526;Tapiocaria Amazônia;-3.0878402;-60.0230559;-1;Av Djalma Batista, 482 - Parque Dez de Novembro Manaus - AM 69050-010Brasil;92-99335-6131;526_2bcae2bc5aaa249f13c015f66cf601ad_brand.jpg
+563;Ortosena;-3.0948139;-60.0229882;-1;Rua Amadeu Castro, 50 - Parque 10 de Novembro Manaus - AM 69050-650 Brazil;92-3642-5469;563_2a819ab8e99e527b8aaa971c5c317de0_brand.jpg
+564;Kassara Nail;-3.0945459;-60.0220849;-1;Rua Amadeu Castro, 50 - Parque 10 de Novembro Manaus - AM 69050-650 Brasil;92-99265-6350;null
+478;Drogaria Lúcia;-3.0194384;-59.9902928;-1;R. Samauma, 24 - Monte das Oliveiras, Manaus - AM, 69093-132, Brazil;92 3674-0418;478_5b955455ff68a4424dfd5a6e6d058d69_brand.jpg
+567;Dona de Si;-3.094497;-60.0227172;-1;Rua Amadeu Castro, 50 - Parque 10 de Novembro Manaus - AM 69050-650 Brasil;92-3637-0730;null
+628;Rosana Mafra Enfermagem e Podologia;-3.1065041;-60.025606;-1;Premium Center, 250, Sala 17. Av. João Valério - São Geraldo, Manaus - AM, 69053-358, Brasil;92-99135-1683;628_83bc3ecbd8b2804859e8bcc1a3d7e429_brand.jpg
+569;Ótica Avenida Amazonas Shopping;-3.0943861;-60.0230108;-1;Avenida Djalma Batista, 2339 - Chapada Manaus - AM 69050-010 Brasil;92-99132-5440;569_743ca0e78ab5a5cab99e8a146d42d46e_brand.jpg
+570;Di Santinni Amazonas Shopping;-3.0938949;-60.0226494;-1;Avenida Darcy Vargas, 318-344 - Compensa Manaus - AM 69030-060 Brasil;92-3236-9416;570_7212f3e729c55175a422f06e0d4a3753_brand.jpg
+568;Immaginarium Amazonas Shopping;-3.0944603;-60.0231914;-1;Avenida Djalma Batista, 2339 - Chapada Manaus - AM 69050-010 Brasil;92-3343-1599;568_74b0645896c993c2db33ef0c970388f3_brand.jpg
+574;Kattleya;-3.0940597;-60.0227905;-1;Avenida Darcy Vargas, 318-344 - Compensa Manaus - AM 69030-060 Brasil;92-3214-5130;null
+482;Bioexata - Centro;-3.1299257;-60.0260189;-1;Rua Lobo D'Almada, 501 - Centro, Manaus - AM, 69010-030, Brazil;92 3234-6313;482_bf2c4601b1e7f8c00cea63ac8324d9c3_brand.jpg
+479;Drogaria Nazaré;-3.1216317;-60.0137775;-1;Av. Japurá, 1263 - Centro, Manaus - AM, Brazil;92 3215-2800;479_cde7fb25a83e1e52f659b7ac6f1aa56d_brand.jpg
+480;Drogarias Nazare;-3.0763709;-60.0494181;-1;R. João Paulo I, 241 - Alvorada, Manaus - AM, 69042-210, Brazil;92 8153-6340;480_df8e0e71c2f084da29dd296c38a2ad09_brand.jpg
+484;Bioexata - Grande circular;-3.111928;-59.94495;-1;Av. Autaz Mirim, 282 - Tancredo Neves, Manaus - AM, 69087-215, Brazil;92 3234-6313;484_30120b22737f4226e7eed2f3e4da401e_brand.jpg
+483;Bioexata - Cachoeirinha;-3.1232452;-60.0059787;-1;Av. Carvalho Leal, 1368 - Cachoeirinha, Manaus - AM, 69065-001, Brazil;92 3234-6313;483_c1115b45516b7dff284d003be5f347d5_brand.jpg
+485;Bioexata Suplementos;-3.1077138;-60.0130653;-1;Av. Mário Ypiranga, 894 - Adrianópolis, Manaus - AM, 69057-000, Brazil;92 3347-5503;485_7343c5e25da44211424347b7afd41a38_brand.jpg
+486;Drogaria Yasmin;-3.0264418;-59.9599225;-1;Av. Penetração, 2 - Cidade Nova, Manaus - AM, 69097-000, Brazil;92 3636-0092;486_ee6def5bed39069af52d010d7132239a_brand.jpg
+489;Drogaria Bom Preço;-3.0456992;-59.9436233;-1;Rua Itaitê, 177 - Cidade Nova, Manaus - AM, Brazil;92 99494-9455;489_df81ac68baa4fdf85a13bb6479a5306f_brand.jpg
+490;Drogaria Balalaika;-3.1260113;-60.0265293;-1;Av. Epaminondas, 748 - Centro, Manaus - AM, 69010-090, Brazil;92 3234-0009;490_9d69bf4d16d442b5d17e7be6132bdb87_brand.jpg
+491;Drogaria Soares;-3.1196111;-60.0436742;-1;R. Leopoldo Neves, 728 - Santo Antônio, Manaus - AM, Brazil;92 33088526;491_2daac29d97979b2568daf6b2ebed54f2_brand.jpg
+493;Drogaria Kamyla;-3.0738131;-59.9377356;-1;Alameda Cosme Ferreira, 7163 - Aleixo, Manaus - AM, Brazil;92 991710073;493_fbd05216dad54f6df92067e3b84cda8b_brand.jpg
+494;Drogaria do Povão;-3.0448251;-59.924417;-1;Av. Mirra, 210 - Jorge Teixeira, Manaus - AM, 69088-415, Brazil;92 99406-6141;494_8201e661d08211d7f757e6f8fcd56e34_brand.jpg
+495;Drogaria Santa Pharma;-3.1261661;-60.015425;-1;Av. Leonardo Malcher, 1851 - Centro, Manaus - AM, 69010-170, Brazil;92 991321313;495_515b37a5bb29c8ea5c7d919139b22971_brand.jpg
+496;Drogaria Oliveira;-3.0509036;-59.932543;-1;R. Topázio, 556 - Tancredo Neves, Manaus - AM, 69087-058, Brazil;92  991869721;496_8eff714e1ab346b161fc8ada8e370e16_brand.jpg
+497;Drogaria Deborah;-3.0877159;-59.9800516;-1;R. Ouro Preto, 429 - Coroado, Manaus - AM, 69080-430, Brazil;92  981227670;497_91906afbe4627f854c07693c7f4264cb_brand.jpg
+498;Drogaria Trindade;-3.077341;-59.9976629;-1;Rua Alexandre Magno, 32 - Parque 10 de Novembro, Manaus - AM, Brazil;92  994171381;498_1b44aa6dcab0cc46f3da634e65bad56a_brand.jpg
+499;Drogaria Unifarmacy;-3.1254749;-59.9914375;-1;Av. Tefé, 2411 - Japiim, Manaus - AM, Brazil;92  982554086;499_d5da25e27ba8a5679be48c8e2e879340_brand.jpg
+591;Ótica Especialista;-3.0940958431;-60.0232592225;10;Avenida Djalma Batista, 2339 - Chapada Manaus - AM 69050-010 Brasil;92-3216-5430;null
+592;Consultório Veterinário Bom Pra Cachorro;-3.1060352979;-60.0195473805;-1;Av. Rio Mar, 650 Nossa Senhora Das Graças;92-98113-7129;null
+561;Via Uno Amazonas Shopping;-3.0943204;-60.0231011;-1;Avenida Djalma Batista, 2339 - Chapada Manaus - AM 69050-010 Brasil;92-99972-6994;561_1fe987814061100640a4c55a767eb7b1_brand.jpg
+593;Ronny Electricista;-3.0950877;-59.9951575;-1;Avenida Via Láctea, 1374 - Aleixo Manaus - AM 69060-085 Brasil;92-98119-7163;593_78e561a649fc4a69cbac97d4f123a1ff_brand.jpg
+595;Royal Service;-3.0902866255;-60.0603598729;-1;Rua Oreste - Compensa Manaus - AM 69036-110 Brasil;92-3333-3333;null
+508;Amazon Print Amazonas Shopping;-3.0940597;-60.0227905;-1;Av. Djalma Batista, 482 - Parque Dez de Novembro, Manaus - AM, 69055-035, Brazil 1o piso;null;508_b911468ccf48b7a8edad36247e6f8aef_brand.jpg
+594;By July;-3.0798466;-60.0221815;-1;Estrada da Ponta Negra;92-99138-7331;null
+596;Távola Redonda Comercial De Alimentos Ltda;-3.1028525;-59.9977226563;10;Av. André Araújo, 1605 - Petrópolis, Manaus - AM, 69067-375, Brasil;92-3611-4433;null
+103;Feijoada No Balde;-3.0945741;-60.0073084;-1;R. 6 - Adrianópolis, Manaus - AM, 69057-740, Brasil;92-98465-8784;103_9c6947bd95ae487c81d4e19d3ed8cd6f_brand.jpg
+3;Amazonvet.;-3.0772062;-59.9751433;-1;Rua dos Crisântemos, 214 - Aleixo Manaus - AM 69083-230 Brasil;92-3248-0236;3_46d3f6029f6170ebccb28945964d09bf_brand.jpg
+598;Dumond;-3.0940597;-60.0227905;-1;Av. Djalma Batista, 482 - Parque Dez de Novembro, Manaus - AM, 69050-010, Brasil;92-99972-6996;null
+608;Escola Náutica Nautilus Sports;-3.118555;-60.042383;-1;Rua Padre Francisco, 1002 andar 1º Garagem Velho Arthur - Santo Antônio, Manaus - AM, 69029-075, Brasil;92-99102-0053;608_af667844d62319431996fab51225dc42_brand.jpg
+511;Camarão & Cia Amazonas Shopping;-3.0940597;-60.0227905;-1;Av. Djalma Batista, 482 - Parque Dez de Novembro, Manaus - AM, 69055-035, Brazil;(92) 3236-5472;511_a42e4a7b9fb201e81689031f8c8d68e1_brand.jpg
+597;LiquidaTudo;-3.0883547;-59.9648834;-1;Estrada de Acesso A Universidade do Amazonas, 2620-3002 - Coroado Manaus - AM Brasil;92-99854-6354;null
+512;Chifon Amazonas Shopping;-3.0940597;-60.0227905;-1;Av. Djalma Batista, 482 - Parque Dez de Novembro, Manaus - AM, 69055-035, Brazil;null;512_a2cfaab3e0324d6d0049fddebc178b69_brand.jpg
+609;Pizza Cone das Torres;-3.0574323;-59.9880117;-1;Praça das Torres - Av. das Torres, s/n - Flores, Manaus - AM, 69093-000, Brasil;92-99247-6873;609_12a8a11aaacc95190ace0b01731f4fc6_brand.jpg
+513;Clube Melissa Amazonas Shopping;-3.0940597;-60.0227905;-1;Av. Djalma Batista, 482 - Parque Dez de Novembro, Manaus - AM, 69055-035, Brazil;null;513_e71c8ce2f1878a7855246be50d366fab_brand.jpg
+514;Livraria Concorde Amazonas Shopping;-3.0940597;-60.0227905;-1;Av. Djalma Batista, 482 - Parque Dez de Novembro, Manaus - AM, 69055-035, Brazil;(92) 3216-5661;514_19452794fdea11c1b0dcc0ba4b357b7f_brand.jpg
+287;ÓTICA OLIVEIRA;-3.1329651;-60.0217461;-1;Rua Rui Barbosa, 184 - Centro Manaus - AM 69010-220 Brasil Em Frente À Rommanel.;92-3234-9198;287_6bb97b16aa82383e443b4f95c02e3867_brand.jpg
+109;A Pizza de Brownie;-3.0570780941;-59.9971727282;15;Rua Marquês de Sapucáia, 1-99 - Flores Manaus - AM 69058-031 Brasil;92-981177185;109_397ea73d431743a9a902442b948a14a5_brand.jpg
+338;LUTHI LOOKS;-3.1264365;-59.9941528;-1;Rua Saldanha Marinho. Na Galeria Casa Grande. Loja 3 - Centro;92-98182-1658;338_ab47e09a7f644d3ad1698bae0c1d30e5_brand.jpg
+606;Ananã Café;-3.1074125;-60.0217695313;-1;R. Rio Jutaí, 488 - Nossa Sra. das Gracas, Manaus - AM, 69053-020, Brasil;92-98110-4734;606_088038942951f54f548448c1823c239c_brand.jpg
+599;Santé Comida Saudável;-3.0991048;-59.9947711;-1;Av. André Araújo, 151 - Adrianópolis, Manaus - AM, 69067-375, Brasil;92-99410-3172;599_54743eac69d2ff7d0768fd910a67ebca_brand.jpg
+600;Frango Bem Gostoso;-3.10634;-60.0264534;-1;Av. João Valério, 13 - Nossa Sra. das Gracas, Manaus - AM, 69053-140, Brasil;92-3232-2149;600_dee17167a98cf44ef0451ec55a38dc96_brand.jpg

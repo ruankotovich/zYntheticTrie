@@ -1,0 +1,136 @@
+666;Mophern
+70;Acabamento (Banheiro, Louças, Assentos, Cozinha e Lavanderia)
+71;Blocos e Tijolos
+72;Casa e Decoração
+73;Cimentos e Argamassas
+74;Areia; Seixo; Brita; Cascalho e Barro
+75;Equipamentos para Construção
+76;Ferramentas
+77;Ferragens; Metais e Acessórios
+78;Iluminação
+79;Janelas e Portas
+80;Madeiras
+81;Mármore; Granito e Pedra
+82;Material Elétrico
+83;Material Hidráulico
+84;Pisos e Revestimentos
+85;Telhas; Calhas; Isolamento e Mantas
+86;Tintas e Acessórios
+88;Acessórios para Automóveis
+89;Acessórios para Motos
+90;Alarme e Rastreador
+91;Customização de Automóveis
+92;Aditivos e Lubrificantes
+93;Autopeças para Veículos Leves
+94;Autopeças para Veículos Pesados
+95;Motopeças
+96;Autopeças para Pickups e Vans
+97;Bateria e autoelétrica
+98;Ferramentas Automotivas
+99;Produtos de Limpeza
+100;Parabrisas e Vidros
+101;Medicamentos
+102;Dermocosméticos
+103;Homeopatia
+104;Higiene e Beleza
+105;Nutricosméticos
+106;Primeiros Socorros
+107;Fitness/Suplementos
+108;Ortopedia e Fisioterapia
+109;Farmácia de Manipulação
+110;Hospedagem
+111;Medicamentos
+112;Banho e Tosa
+113;Ração / Alimentação
+114;Acessórios e Brinquedos
+115;Atendimento Veterinário
+116;Venda de Pets
+159;Encadernação Espiral e Capa Dura
+118;Livros
+119;Papelaria
+117;Aros e Pneus
+120;Móveis para Escritório
+121;Material de Expediente
+122;Higiene e Limpeza
+124;Eletrônicos
+125;Eletrodomésticos
+127;Celulares
+129;Artigos para Festas
+130; Animadores
+131;Bolos
+132;Doces
+133;Salgados
+134;Decoração de Festas
+135;Garçons
+136;Fotógrafos
+123;Descartáveis
+138;Buffet
+128;Ferramentas Elétricas
+139;Notebooks; Desktops e Servidores
+140;Tablets
+141;Acessórios para Informática
+142;Suprimentos
+143;Cartuchos
+144;Tonners
+145;Impressoras
+146;Tintas e Refis
+147;Jogos (games)
+148;Console de Jogos
+149;Projetores
+150;Monitores de vídeo
+151;Salões de Festa Infantil
+152; Som e Iluminação
+153;Cartões e Convites
+154;Churrasqueiro
+137;Salões de Festas Adulto
+155;Impressões em papel
+156; Impressoes em lona
+157; Xerox Preto e Branco e Colorido
+158;Digitalização de Documentos
+160; Revelação de Fotos
+161;Plastificação
+162;Adesivos
+163;Serigrafia em Camisas
+164;Corte a Laser
+165;Impressão em Porcelana
+166;Troféu e Medalhas em Acrílico
+167;Óculos de Grau
+168;Óculos de Sol
+169;Manutenção em Lentes e Armações
+170;Lentes de Contato
+171;Manicure e Pedicure
+172;Design de Sobrancelhas
+173;Escovas
+174;Corte Feminino
+175;Corte Masculino
+176;Depilação
+177;Permanente
+178;Produtos de Beleza
+179;Produtos para Salão
+180;Bronzeamento Artificial
+181;Pizza
+182;Feijoada
+183;Sanduiches
+185;Frango
+186;Sopas
+187;Peixe
+188;Mexicana
+189;Pedreiro
+190;Marceneiro
+191;Pintor
+192;Eletricista
+193;Hidráulica
+194;Construtora
+195;Empreiteiro
+196;Jardinagem
+87;Vidraçaria e Acessórios
+197;Semijoias
+198;Bolsas
+199;Bijuterias
+200;Cintos
+201;Chapéus
+202;Adereços
+184;Japonesa
+203;Massas
+204;Francesa
+205;Doces
