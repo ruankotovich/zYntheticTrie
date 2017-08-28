@@ -1,5 +1,4 @@
 #include "trie.hpp"
-#include "occurrence.hpp"
 #include <algorithm>
 #include <dirent.h>
 #include <fstream>
@@ -14,37 +13,41 @@
 
 using namespace trie;
 
-trie::ActiveNode_t::ActiveNode_t(TrieNode_t* nd, int ed)
+template <typename T>
+trie::ActiveNode_t<T>::ActiveNode_t(TrieNode_t<T>* nd, int ed)
     : node(nd)
     , editDistance(ed)
     , positionDistance(0)
 {
 }
 
-trie::ActiveNode_t::ActiveNode_t(TrieNode_t* nd, int ed, int pos)
+template <typename T>
+trie::ActiveNode_t<T>::ActiveNode_t(TrieNode_t<T>* nd, int ed, int pos)
     : node(nd)
     , editDistance(ed)
     , positionDistance(pos)
 {
 }
 
-bool trie::ActiveNode_t::operator<(const ActiveNode_t& anode) const
+template <typename T>
+bool trie::ActiveNode_t<T>::operator<(const ActiveNode_t<T>& anode) const
 {
     return this->node < anode.node;
 }
 
-bool trie::ActiveNodeComparator_t::operator()(const ActiveNode_t& n1, const ActiveNode_t& n2) const
+template <typename T>
+bool trie::ActiveNodeComparator_t<T>::operator()(const ActiveNode_t<T>& n1, const ActiveNode_t<T>& n2) const
 {
     return n1.editDistance > n2.editDistance;
 }
 
 // Trie_t private methods
-void trie::Trie_t::buildActiveNodeSet()
+template <typename T, typename C>
+void trie::Trie_t<T, C>::buildActiveNodeSet()
 {
-    std::queue<std::pair<TrieNode_t*, int>> seekQueue;
-    std::unordered_map<TrieNode_t*, TrieNode_t*> father;
-    std::set<TrieNode_t*> visited;
-
+    std::queue<std::pair<TrieNode_t<T>*, int>> seekQueue;
+    std::unordered_map<TrieNode_t<T>*, TrieNode_t<T>*> father;
+    std::set<TrieNode_t<T>*> visited;
     seekQueue.emplace(this->m_lambdaNode, 0); // add the lambdaNode to the seek
     m_activeNodeSet.emplace(this->m_lambdaNode, 0); // add the lambdaNode to the activeSet
     father.emplace(this->m_lambdaNode, nullptr); // set lambdaNode father as nullptr
@@ -55,7 +58,7 @@ void trie::Trie_t::buildActiveNodeSet()
         auto currentNode = seekQueue.front(); // get currentNode
         seekQueue.pop();
 
-        for (TrieNode_t* child : currentNode.first->getChildren()) {
+        for (TrieNode_t<T>* child : currentNode.first->getChildren()) {
 
             // verify if the child hasn't been visited recently
             if (visited.find(child) == visited.end()) {
@@ -69,7 +72,7 @@ void trie::Trie_t::buildActiveNodeSet()
                 }
 
                 if (child->isEndOfWord()) { // verify if this child is end of word
-                    TrieNode_t* currentChild = child;
+                    TrieNode_t<T>* currentChild = child;
                     m_activeNodeSet.emplace(currentChild, currentLevel); // add the child to the activeSet
 
                     auto currentChild_it = father.find(child);
@@ -88,8 +91,8 @@ void trie::Trie_t::buildActiveNodeSet()
         }
     }
 }
-
-void trie::Trie_t::push_string_to_wchar(wchar_t* w, std::string& a)
+template <typename T, typename C>
+void trie::Trie_t<T, C>::push_string_to_wchar(wchar_t* w, std::string& a)
 {
     setlocale(LC_ALL, "");
     const char* nw = a.c_str();
@@ -97,7 +100,8 @@ void trie::Trie_t::push_string_to_wchar(wchar_t* w, std::string& a)
     w[a.length()] = 0;
 }
 
-void trie::Trie_t::encodeCharacters(const std::string& filename)
+template <typename T, typename C>
+void trie::Trie_t<T, C>::encodeCharacters(const std::string& filename)
 {
     // std::cout << "[LOG] Encoding characters." << std::endl;
     unsigned int lineCode = 1;
@@ -122,7 +126,8 @@ void trie::Trie_t::encodeCharacters(const std::string& filename)
     std::cout << "Charmap has been mapped.\n";
 }
 
-void trie::Trie_t::addStopWords(const std::string& filename)
+template <typename T, typename C>
+void trie::Trie_t<T, C>::addStopWords(const std::string& filename)
 {
     std::string currentLine;
     std::ifstream fileInputStream(filename);
@@ -133,19 +138,20 @@ void trie::Trie_t::addStopWords(const std::string& filename)
     }
 }
 
-bool trie::Trie_t::isStopWord(std::string str)
+template <typename T, typename C>
+bool trie::Trie_t<T, C>::isStopWord(std::string str)
 {
     std::transform(str.begin(), str.end(), str.begin(), ::tolower);
     return m_stopWords.find(str) != m_stopWords.end();
 }
 
 // Trie_t public methods
-
-trie::Trie_t::Trie_t()
+template <typename T, typename C>
+trie::Trie_t<T, C>::Trie_t()
     : m_searchLimitThreshold(5)
     , m_fuzzyLimitThreshold(1)
 {
-    this->m_lambdaNode = new TrieNode_t(0);
+    this->m_lambdaNode = new TrieNode_t<T>(0);
 
     DIR* dirp;
     struct dirent* directory;
@@ -163,12 +169,13 @@ trie::Trie_t::Trie_t()
     encodeCharacters("charmap.cm");
 }
 
-void trie::Trie_t::printTrie()
+template <typename T, typename C>
+void trie::Trie_t<T, C>::printTrie()
 {
-    TrieNode_t* currentNode;
-    std::set<TrieNode_t*> visited;
+    TrieNode_t<T>* currentNode;
+    std::set<TrieNode_t<T>*> visited;
 
-    std::stack<TrieNode_t*> nodeStack;
+    std::stack<TrieNode_t<T>*> nodeStack;
     nodeStack.push(this->m_lambdaNode);
 
     while (!nodeStack.empty()) {
@@ -177,7 +184,7 @@ void trie::Trie_t::printTrie()
         if (visited.find(currentNode) == visited.end()) {
             visited.insert(currentNode);
             std::cout << "[" << this->m_reverseCharacterMap[currentNode->getContent()] << (currentNode->isEndOfWord() ? "'" : " ");
-            std::vector<TrieNode_t*> children = currentNode->getChildren();
+            std::vector<TrieNode_t<T>*> children = currentNode->getChildren();
 
             while (!children.empty()) {
                 nodeStack.push(children.back());
@@ -191,9 +198,10 @@ void trie::Trie_t::printTrie()
     }
 }
 
-void trie::Trie_t::putWordAsCategory(std::string& str, char position, unsigned int reference)
+template <typename T, typename C>
+void trie::Trie_t<T, C>::putWord(std::string& str, const T& content)
 {
-    TrieNode_t *currentRoot, *lastRoot;
+    TrieNode_t<T>*currentRoot, *lastRoot;
     currentRoot = this->m_lambdaNode;
 
     wchar_t chart[str.size()];
@@ -212,46 +220,19 @@ void trie::Trie_t::putWordAsCategory(std::string& str, char position, unsigned i
 
     if (currentRoot != this->m_lambdaNode) {
 
-        if (!currentRoot->isEndOfCategory()) {
-            currentRoot->buildOccurrences(CATEGORY);
-            currentRoot->setEndOfCategory(true);
+        if (!currentRoot->isEndOfWord()) {
+            currentRoot->buildOccurrences();
+            currentRoot->setEndOfWord(true);
         }
-        currentRoot->addOccurrence(position, reference, CATEGORY);
+
+        currentRoot->setValue(content);
     }
 }
 
-void trie::Trie_t::putWordAsStore(std::string& str, char position, unsigned int reference)
+template <typename T, typename C>
+std::set<ActiveNode_t<T>> trie::Trie_t<T, C>::buildNewSet(std::set<ActiveNode_t<T>>& set, unsigned int curChar)
 {
-    TrieNode_t *currentRoot, *lastRoot;
-    currentRoot = this->m_lambdaNode;
-
-    wchar_t chart[str.size()];
-    push_string_to_wchar(chart, str);
-
-    for (unsigned int i = 0; i < wcslen(chart); i++) {
-
-        unsigned int code = this->m_characterMap[chart[i]];
-
-        lastRoot = currentRoot;
-        currentRoot = currentRoot->getChild(code);
-        if (!currentRoot) {
-            currentRoot = lastRoot->insertNReturnChild(code);
-        }
-    }
-
-    if (currentRoot != this->m_lambdaNode) {
-
-        if (!currentRoot->isEndOfStore()) {
-            currentRoot->buildOccurrences(STORE);
-            currentRoot->setEndOfStore(true);
-        }
-        currentRoot->addOccurrence(position, reference, STORE);
-    }
-}
-
-std::set<ActiveNode_t> trie::Trie_t::buildNewSet(std::set<ActiveNode_t>& set, unsigned int curChar)
-{
-    std::set<ActiveNode_t> activeNodeSet;
+    std::set<ActiveNode_t<T>> activeNodeSet;
 
     /*
   ** Considering node N
@@ -320,13 +301,13 @@ std::set<ActiveNode_t> trie::Trie_t::buildNewSet(std::set<ActiveNode_t>& set, un
         */
                 // std::cout << "\t\tIt's children will be verifieds to be added to the set : \n";
 
-                std::queue<TrieNode_t*> toRecover; // a queue to save which node is on the way
+                std::queue<TrieNode_t<T>*> toRecover; // a queue to save which node is on the way
                 toRecover.push(childIteratorOnSet.first->node); // adding the current matched node to the queue
 
                 // while the distance is lesser than the limit and we got some node to recover...
                 while (currentChildDistance < m_fuzzyLimitThreshold && !toRecover.empty()) {
                     // recover the current node from the queue
-                    TrieNode_t*& currentNode = toRecover.front();
+                    TrieNode_t<T>*& currentNode = toRecover.front();
                     // std::cout << "\t\tCurrent node : " << m_reverseCharacterMap[currentNode->getContent()] << '\n';
                     // and update the distance to one more
                     ++currentChildDistance;
@@ -360,10 +341,11 @@ std::set<ActiveNode_t> trie::Trie_t::buildNewSet(std::set<ActiveNode_t>& set, un
     return activeNodeSet;
 }
 
-std::priority_queue<Occurrence_t, std::vector<Occurrence_t>, OccurrencePriorityComparator_t> Trie_t::searchSimilarKeyword(const std::string& keyword, Type type)
+template <typename T, typename C>
+std::priority_queue<T, std::vector<T>, C> Trie_t<T, C>::searchSimilarKeyword(const std::string& keyword)
 {
-    std::set<Occurrence_t>* lastAnswerSet = nullptr;
-    std::list<std::priority_queue<ActiveNode_t, std::vector<ActiveNode_t>, ActiveNodeComparator_t>> activeLists;
+    std::set<T>* lastAnswerSet = nullptr;
+    std::list<std::priority_queue<ActiveNode_t<T>, std::vector<ActiveNode_t<T>>, ActiveNodeComparator_t<T>>> activeLists;
     std::string curKeyword;
 
     std::stringstream wordStream(keyword);
@@ -380,7 +362,7 @@ std::priority_queue<Occurrence_t, std::vector<Occurrence_t>, OccurrencePriorityC
             }
         }
 
-        std::set<ActiveNode_t> lastActiveNodes = this->m_activeNodeSet;
+        std::set<ActiveNode_t<T>> lastActiveNodes = this->m_activeNodeSet;
 
         wchar_t chart[curKeyword.size()];
         push_string_to_wchar(chart, curKeyword);
@@ -389,7 +371,7 @@ std::priority_queue<Occurrence_t, std::vector<Occurrence_t>, OccurrencePriorityC
             lastActiveNodes = buildNewSet(lastActiveNodes, m_characterMap[chart[i]]);
         }
 
-        auto currentList = activeLists.emplace(activeLists.end(), std::priority_queue<ActiveNode_t, std::vector<ActiveNode_t>, ActiveNodeComparator_t>());
+        auto currentList = activeLists.emplace(activeLists.end(), std::priority_queue<ActiveNode_t<T>, std::vector<ActiveNode_t<T>>, ActiveNodeComparator_t<T>>());
         for (auto node : lastActiveNodes) {
             currentList->push(node);
         }
@@ -399,8 +381,8 @@ std::priority_queue<Occurrence_t, std::vector<Occurrence_t>, OccurrencePriorityC
 
     for (auto currentList : activeLists) {
         std::cout << "\n\n";
-        std::set<Occurrence_t>* answerSet = new std::set<Occurrence_t>();
-        std::unordered_set<TrieNode_t*> visitedNode;
+        std::set<T>* answerSet = new std::set<T>();
+        std::unordered_set<TrieNode_t<T>*> visitedNode;
 
         while (!currentList.empty()) {
 
@@ -408,7 +390,7 @@ std::priority_queue<Occurrence_t, std::vector<Occurrence_t>, OccurrencePriorityC
             currentList.pop();
 
             if (visitedNode.find(aNode.node) == visitedNode.end()) {
-                std::queue<TrieNode_t*> pQueue;
+                std::queue<TrieNode_t<T>*> pQueue;
                 pQueue.push(aNode.node);
 
                 while (!pQueue.empty()) {
@@ -417,34 +399,18 @@ std::priority_queue<Occurrence_t, std::vector<Occurrence_t>, OccurrencePriorityC
                     pQueue.pop();
 
                     if (currentSeeker->isEndOfWord()) {
+                        answerSet->insert(currentSeeker->getValue());
+                        // for (auto action : currentSeeker->getOccurences(type)) {
 
-                        // if (currentSeeker->isEndOfCategory()) {
-                        //     for (auto categs : currentSeeker->getOccurences(CATEGORY)) {
-                        //         for (auto cat : *categs) {
-                        //             std::cout << " - " << this->m_categoryTable.find(cat.itemRef)->second.name << '\n';
-                        //         }
+                        //     for (auto ocurrence : (*action)) {
+                        //         ocurrence.weight = aNode.editDistance;
+                        //         ocurrence.positionOnItem = abs(ocurrence.positionOnItem - iteration);
+                        //         answerSet->insert(ocurrence);
                         //     }
                         // }
-
-                        // if (currentSeeker->isEndOfStore()) {
-                        //     for (auto stors : currentSeeker->getOccurences(STORE)) {
-                        //         for (auto sto : *stors) {
-                        //             std::cout << " - " << this->m_storeTable.find(sto.itemRef)->second.name << '\n';
-                        //         }
-                        //     }
-                        // }
-
-                        for (auto action : currentSeeker->getOccurences(type)) {
-
-                            for (auto ocurrence : (*action)) {
-                                ocurrence.weight = aNode.editDistance;
-                                ocurrence.positionOnItem = abs(ocurrence.positionOnItem - iteration);
-                                answerSet->insert(ocurrence);
-                            }
-                        }
                     }
 
-                    for (TrieNode_t* curChild : currentSeeker->getChildren()) {
+                    for (TrieNode_t<T>* curChild : currentSeeker->getChildren()) {
                         if (visitedNode.find(curChild) == visitedNode.end()) {
                             pQueue.emplace(curChild);
                         }
@@ -456,7 +422,7 @@ std::priority_queue<Occurrence_t, std::vector<Occurrence_t>, OccurrencePriorityC
         if (iteration > 1) {
 
             if (lastAnswerSet->size() > answerSet->size()) {
-                std::set<Occurrence_t>* back = lastAnswerSet;
+                std::set<T>* back = lastAnswerSet;
                 lastAnswerSet = answerSet;
                 answerSet = back;
             }
@@ -517,7 +483,7 @@ std::priority_queue<Occurrence_t, std::vector<Occurrence_t>, OccurrencePriorityC
     //     }
     // }
 
-    std::priority_queue<Occurrence_t, std::vector<Occurrence_t>, OccurrencePriorityComparator_t> ocurrencesQueue;
+    std::priority_queue<T, std::vector<T>, C> ocurrencesQueue;
 
     if (lastAnswerSet != nullptr) {
         for (auto ocur : *lastAnswerSet) {
@@ -530,259 +496,14 @@ std::priority_queue<Occurrence_t, std::vector<Occurrence_t>, OccurrencePriorityC
     return ocurrencesQueue;
 }
 
-void trie::Trie_t::setSearchLimitThreshold(int limit)
+template <typename T, typename C>
+void trie::Trie_t<T, C>::setSearchLimitThreshold(int limit)
 {
     this->m_searchLimitThreshold = limit;
 }
 
-void trie::Trie_t::setFuzzyLimitThreshold(int limit)
+template <typename T, typename C>
+void trie::Trie_t<T, C>::setFuzzyLimitThreshold(int limit)
 {
     this->m_fuzzyLimitThreshold = limit;
-}
-
-void trie::Trie_t::printData()
-{
-    std::cout << " -- Categories -- \n";
-
-    for (auto a : this->m_categoryTable) {
-        std::cout << " - " << a.first << " , " << a.second.name << '\n';
-    }
-
-    std::cout << " -- Stores -- \n";
-
-    for (auto a : this->m_storeTable) {
-        std::cout << " - " << a.first << " , " << a.second.name << " , " << a.second.lat << " , " << a.second.lng << " , " << a.second.max_radius << '\n';
-    }
-}
-
-std::set<UData::Category_t, UData::CategoryComparator_t> trie::Trie_t::getCategoriesByStore(unsigned int id)
-{
-    std::set<UData::Category_t, UData::CategoryComparator_t> categories;
-    auto catIdSet = this->m_relationStoCat.find(id);
-
-    if (catIdSet != this->m_relationStoCat.end()) {
-        for (auto cat : catIdSet->second) {
-            auto foundCat = this->m_categoryTable.find(cat);
-            if (foundCat != this->m_categoryTable.end()) {
-                categories.emplace(foundCat->second.id, foundCat->second.name, foundCat->second.jsonObject);
-            }
-        }
-    }
-
-    return categories;
-}
-
-std::set<UData::Store_t, UData::StoreComparator_t> trie::Trie_t::getStoresByCategory(unsigned int id)
-{
-    std::set<UData::Store_t, UData::StoreComparator_t> stores;
-
-    auto stoIdSet = this->m_relationCatSto.find(id);
-
-    if (stoIdSet != this->m_relationCatSto.end()) {
-        for (auto sto : stoIdSet->second) {
-            auto foundSto = this->m_storeTable.find(sto);
-            if (foundSto != this->m_storeTable.end()) {
-                stores.emplace(foundSto->second.id, foundSto->second.name, foundSto->second.lat, foundSto->second.lng, foundSto->second.max_radius, foundSto->second.address, foundSto->second.phone, foundSto->second.brand, foundSto->second.jsonObject);
-            }
-        }
-    }
-
-    return stores;
-}
-
-bool trie::Trie_t::insertCategory(unsigned int id, const std::string& name)
-{
-    // Tip on https://stackoverflow.com/questions/27960325/stdmap-emplace-without-copying-value / accessed on 1st August 2017
-    auto emplaceIterator = this->m_categoryTable.emplace(std::piecewise_construct, std::forward_as_tuple(id), std::forward_as_tuple(id, name));
-
-    char position = 1;
-    std::string word;
-    std::stringstream strstream(name);
-    while (std::getline(strstream, word, ' ')) {
-
-        std::transform(word.begin(), word.end(), word.begin(), ::tolower);
-
-        if (!this->isStopWord(word)) {
-            this->putWordAsCategory(word, position, id);
-        }
-
-        position++;
-    }
-
-    UData::buildJson(emplaceIterator.first->second);
-    return true;
-}
-
-bool trie::Trie_t::insertStore(unsigned int id, const std::string& name, const std::string& lat, const std::string& lng, const std::string& max_radius, const std::string& address, const std::string& phone, const std::string& brand)
-{
-    auto emplaceIterator = this->m_storeTable.emplace(std::piecewise_construct, std::forward_as_tuple(id), std::forward_as_tuple(id, name, lat, lng, max_radius, address, phone, brand));
-
-    char position = 1;
-    std::string word;
-    std::stringstream strstream(name);
-    while (std::getline(strstream, word, ' ')) {
-
-        std::transform(word.begin(), word.end(), word.begin(), ::tolower);
-
-        if (!this->isStopWord(word)) {
-            this->putWordAsStore(word, position, id);
-        }
-
-        position++;
-    }
-
-    UData::buildJson(emplaceIterator.first->second);
-    return true;
-}
-
-bool trie::Trie_t::updateStore(unsigned int id, const std::string& name, const std::string& lat, const std::string& lng, const std::string& max_radius, const std::string& address, const std::string& phone, const std::string& brand)
-{
-    auto storeIterator = this->m_storeTable.find(id);
-
-    if (storeIterator != m_storeTable.end()) {
-        if (name.compare(storeIterator->second.name) != 0) {
-            this->insertStore(id, name, lat, lng, max_radius, address, phone, brand);
-            UData::updateAll(storeIterator->second, name, lat, lng, max_radius, address, phone, brand);
-        }
-        return true;
-    } else {
-        return false;
-    }
-}
-
-bool trie::Trie_t::updateCategory(unsigned int id, const std::string& name)
-{
-    auto categoryIterator = this->m_categoryTable.find(id);
-
-    if (categoryIterator != m_categoryTable.end()) {
-        if (name.compare(categoryIterator->second.name) != 0) {
-            this->insertCategory(id, name);
-            UData::updateAll(categoryIterator->second, name);
-        }
-        return true;
-    } else {
-        return false;
-    }
-}
-
-bool trie::Trie_t::addRelation(unsigned int relative, unsigned int relationary)
-{
-    // std::cout << relative << '-' << relationary << '\n';
-    auto stoIterator = this->m_relationStoCat.find(relative); // category
-    auto catIterator = this->m_relationCatSto.find(relationary); // store
-
-    if (catIterator == this->m_relationCatSto.end()) {
-        auto catSet = this->m_relationCatSto.emplace(relationary, std::set<unsigned int>());
-        catSet.first->second.emplace(relative);
-    } else {
-        catIterator->second.emplace(relative);
-    }
-
-    if (stoIterator == this->m_relationStoCat.end()) {
-        auto stoSet = this->m_relationStoCat.emplace(relative, std::set<unsigned int>());
-        stoSet.first->second.emplace(relationary);
-    } else {
-        stoIterator->second.emplace(relationary);
-    }
-
-    return true;
-}
-
-bool trie::Trie_t::removeRelation(unsigned int relative, unsigned int relationary)
-{
-    auto stoIterator = this->m_relationStoCat.find(relative);
-    auto catIterator = this->m_relationCatSto.find(relationary);
-
-    if (catIterator != this->m_relationCatSto.end() && stoIterator != this->m_relationStoCat.end()) {
-
-        auto relativeToRemove = catIterator->second.find(relative);
-        auto relationaryToRemove = stoIterator->second.find(relationary);
-
-        if (relativeToRemove != catIterator->second.end()) {
-            catIterator->second.erase(relativeToRemove);
-        }
-
-        if (relationaryToRemove != stoIterator->second.end()) {
-            stoIterator->second.erase(relationaryToRemove);
-        }
-
-        return true;
-    } else {
-        return false;
-    }
-}
-
-bool trie::Trie_t::removeStore(unsigned int id, bool keepRelations)
-{
-    auto storeIterator = this->m_storeTable.find(id);
-
-    if (storeIterator != m_storeTable.end()) {
-        storeIterator->second.active = false;
-
-        auto storeCatIterator = this->m_relationStoCat.find(id); // search all the categories of this store
-        if (storeCatIterator != this->m_relationStoCat.end()) {
-
-            for (auto toSeekAndRemoveCat : storeCatIterator->second) { // for each category
-                auto seekStores = this->m_relationCatSto.find(toSeekAndRemoveCat); // search into its stores
-                if (seekStores != this->m_relationCatSto.end()) { // and delete the "id" if it exist
-
-                    auto storeFound = seekStores->second.find(id);
-
-                    if (storeFound != seekStores->second.end()) {
-                        seekStores->second.erase(storeFound);
-                    }
-                }
-            }
-
-            this->m_relationStoCat.erase(storeCatIterator);
-        }
-
-        m_storeTable.erase(storeIterator);
-
-        return true;
-    } else {
-        return false;
-    }
-}
-
-bool trie::Trie_t::removeCategory(unsigned int id, bool keepRelations)
-{
-    auto categoryIterator = this->m_categoryTable.find(id);
-
-    if (categoryIterator != m_categoryTable.end()) { // find the category on the table
-
-        auto catStoIterator = this->m_relationCatSto.find(id);
-
-        if (catStoIterator != this->m_relationCatSto.end()) {
-            for (auto stoId : catStoIterator->second) {
-
-                auto stoCatIterator = this->m_relationStoCat.find(stoId);
-
-                if (stoCatIterator != this->m_relationStoCat.end()) {
-                    auto catFound = stoCatIterator->second.find(id);
-
-                    if (catFound != stoCatIterator->second.end()) {
-                        stoCatIterator->second.erase(catFound);
-                    }
-                }
-            }
-
-            this->m_relationCatSto.erase(catStoIterator);
-        }
-
-        this->m_categoryTable.erase(categoryIterator);
-        return true;
-
-    } else {
-        return false;
-    }
-}
-
-UData::Store_t trie::Trie_t::getStore(unsigned int id)
-{
-    return this->m_storeTable.find(id)->second;
-}
-UData::Category_t trie::Trie_t::getCategory(unsigned int id)
-{
-    return this->m_categoryTable.find(id)->second;
 }

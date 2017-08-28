@@ -4,14 +4,15 @@
 using namespace trie;
 
 // TrieNode_t public methods
-TrieNode_t::TrieNode_t(unsigned int val)
+template <typename T>
+TrieNode_t<T>::TrieNode_t(unsigned int val)
+    : m_content(val)
+    , m_endOfWord(false)
 {
-    this->m_content = val;
-    this->m_endOfStore = false;
-    this->m_endOfCategory = false;
 }
 
-std::vector<TrieNode_t*> TrieNode_t::getChildren()
+template <typename T>
+std::vector<TrieNode_t<T>*> TrieNode_t<T>::getChildren()
 {
     std::vector<TrieNode_t*> nodes;
     for (auto cur : this->m_childrenMap) {
@@ -20,14 +21,16 @@ std::vector<TrieNode_t*> TrieNode_t::getChildren()
     return nodes;
 }
 
-TrieNode_t* TrieNode_t::insertNReturnChild(unsigned int value)
+template <typename T>
+TrieNode_t<T>* TrieNode_t<T>::insertNReturnChild(unsigned int value)
 {
     TrieNode_t* node = new TrieNode_t(value);
     this->m_childrenMap.insert({ value, node });
     return node;
 }
 
-TrieNode_t* TrieNode_t::getChild(unsigned int value)
+template <typename T>
+TrieNode_t<T>* TrieNode_t<T>::getChild(unsigned int value)
 {
     auto child = this->m_childrenMap.find(value);
     if (child != this->m_childrenMap.end()) {
@@ -36,76 +39,26 @@ TrieNode_t* TrieNode_t::getChild(unsigned int value)
     return nullptr;
 }
 
-unsigned int TrieNode_t::getContent()
+template <typename T>
+unsigned int TrieNode_t<T>::getContent()
 {
     return this->m_content;
 }
 
-void TrieNode_t::setEndOfCategory(bool isEnd)
+template <typename T>
+bool TrieNode_t<T>::isEndOfWord()
 {
-    this->m_endOfCategory = isEnd;
+    return this->m_endOfWord;
 }
 
-void TrieNode_t::setEndOfStore(bool isEnd)
+template <typename T>
+void TrieNode_t<T>::setValue(const T* content)
 {
-    this->m_endOfStore = isEnd;
+    this->m_nodeContent = content;
 }
 
-bool TrieNode_t::isEndOfCategory()
+template <typename T>
+const T& TrieNode_t<T>::getValue()
 {
-    return this->m_endOfCategory;
-}
-
-bool TrieNode_t::isEndOfStore()
-{
-    return this->m_endOfStore;
-}
-
-bool TrieNode_t::isEndOfWord()
-{
-    return this->m_endOfStore | this->m_endOfCategory;
-}
-
-void TrieNode_t::buildOccurrences(Type type)
-{
-    if (type == STORE) {
-        this->m_storeOccurrences = new std::list<Occurrence_t>();
-    } else {
-        this->m_categoryOccurrences = new std::list<Occurrence_t>();
-    }
-}
-
-void TrieNode_t::addOccurrence(char position, unsigned int reg, Type type)
-{
-    if (type == STORE) {
-        this->m_storeOccurrences->emplace(this->m_storeOccurrences->begin(), reg, position, type);
-    } else {
-        this->m_categoryOccurrences->emplace(this->m_categoryOccurrences->begin(), reg, position, type);
-    }
-}
-
-std::list<const std::list<Occurrence_t>*> TrieNode_t::getOccurences(Type type)
-{
-    std::list<const std::list<Occurrence_t>*> operList;
-
-    if (type == STORE) {
-        if (this->m_endOfStore) {
-            operList.emplace_back(this->m_storeOccurrences);
-        }
-    } else if (type == CATEGORY) {
-        if (this->m_endOfCategory) {
-            operList.emplace_back(this->m_categoryOccurrences);
-        }
-    } else {
-
-        if (this->m_endOfStore) {
-            operList.emplace_back(this->m_storeOccurrences);
-        }
-
-        if (this->m_endOfCategory) {
-            operList.emplace_back(this->m_categoryOccurrences);
-        }
-    }
-
-    return operList;
+    return this->m_nodeContent;
 }
