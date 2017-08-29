@@ -1,4 +1,9 @@
-#include "trie.hpp"
+#pragma once
+#include <map>
+#include <queue>
+#include <set>
+#include <unordered_map>
+#include <vector>
 #include <algorithm>
 #include <dirent.h>
 #include <fstream>
@@ -8,10 +13,128 @@
 #include <sstream>
 #include <stack>
 #include <string>
-#include <unordered_map>
 #include <unordered_set>
 
-using namespace trie;
+namespace trie {
+
+    template <typename T>
+    class TrieNode_t {
+        std::map<unsigned int, TrieNode_t*> m_childrenMap; // used to save all the children (access / insertion O(log n))
+        unsigned int m_content; // used to store the current character code in it's structure
+        bool m_endOfWord;
+        T* m_nodeContent;
+    
+    public:
+        TrieNode_t(unsigned int); // it puts the code
+        unsigned int getContent(); // used to return the content
+        std::vector<TrieNode_t<T>*> getChildren(); // it gets a vector containing all the childrem of this node
+        TrieNode_t<T>* insertNReturnChild(unsigned int); // it inserts a children with this code and returns it
+        TrieNode_t<T>* getChild(unsigned int); // retrieves and returns the relative child
+        bool isEndOfWord(); // check if it's the end of a word
+        void setEndOfWord(bool); // set whether it's a end of word or not
+        void setValue(const T*);
+        const T& getValue();
+    };
+    
+    template <typename T>
+    TrieNode_t<T>::TrieNode_t(unsigned int val)
+        : m_content(val)
+        , m_endOfWord(false)
+    {
+    }
+    
+    template <typename T>
+    std::vector<TrieNode_t<T>*> TrieNode_t<T>::getChildren()
+    {
+        std::vector<TrieNode_t*> nodes;
+        for (auto cur : this->m_childrenMap) {
+            nodes.push_back(cur.second);
+        }
+        return nodes;
+    }
+    
+    template <typename T>
+    TrieNode_t<T>* TrieNode_t<T>::insertNReturnChild(unsigned int value)
+    {
+        TrieNode_t* node = new TrieNode_t(value);
+        this->m_childrenMap.insert({ value, node });
+        return node;
+    }
+    
+    template <typename T>
+    TrieNode_t<T>* TrieNode_t<T>::getChild(unsigned int value)
+    {
+        auto child = this->m_childrenMap.find(value);
+        if (child != this->m_childrenMap.end()) {
+            return child->second;
+        }
+        return nullptr;
+    }
+    
+    template <typename T>
+    unsigned int TrieNode_t<T>::getContent()
+    {
+        return this->m_content;
+    }
+    
+    template <typename T>
+    bool TrieNode_t<T>::isEndOfWord()
+    {
+        return this->m_endOfWord;
+    }
+    
+    template <typename T>
+    void TrieNode_t<T>::setValue(const T* content)
+    {
+        this->m_nodeContent = content;
+    }
+    
+    template <typename T>
+    const T& TrieNode_t<T>::getValue()
+    {
+        return this->m_nodeContent;
+    }
+
+template <typename T>
+struct ActiveNode_t {
+    TrieNode_t<T>* node;
+    mutable int editDistance;
+    mutable int positionDistance;
+    ActiveNode_t(TrieNode_t<T>*, int);
+    ActiveNode_t(TrieNode_t<T>*, int, int);
+    bool operator<(const ActiveNode_t<T>&) const;
+};
+
+template <typename T>
+struct ActiveNodeComparator_t {
+    bool operator()(const ActiveNode_t<T>&, const ActiveNode_t<T>&) const;
+};
+
+template <typename T, typename C>
+class Trie_t {
+    TrieNode_t<T>* m_lambdaNode; // used to indicate the first node
+    std::unordered_map<unsigned int, unsigned int> m_characterMap; // used to map all the characters to it's defined codes
+    std::unordered_map<unsigned int, char> m_reverseCharacterMap; // used to map all the defined codes to it's characters (4fun)
+    std::set<ActiveNode_t<T>> m_activeNodeSet; // uset to save the main activeNode set
+    std::set<std::string> m_stopWords;
+    void push_string_to_wchar(wchar_t*, std::string&); // push a string into a wchar_t array
+    int m_searchLimitThreshold; // threshold used for delimit the answers amount (default : 5)
+    int m_fuzzyLimitThreshold; // threshold used for delimit the edit distance from node (default : 1)
+    std::set<ActiveNode_t<T>> buildNewSet(std::set<ActiveNode_t<T>>&, unsigned int);
+
+public:
+    Trie_t(); // default constructor, receiving the filename which wordmap will be readen
+    void encodeCharacters(const std::string&); // used to start the encoding/decoding vector of  the characters contained on the file
+    void addStopWords(const std::string&);
+    bool isStopWord(std::string);
+    void printTrie(); // print the tree { see the tree on http://mshang.ca/syntree/ =) }
+    void putWord(std::string&, const T&); // include a string in the trie structure
+    void setSearchLimitThreshold(int); // set the m_searchLimitThreshold
+    void setFuzzyLimitThreshold(int); // set the m_fuzzyLimitThreshold
+    void buildActiveNodeSet(); // used to build the activeNode set at once
+    std::priority_queue<T, std::vector<T>, C> searchSimilarKeyword(const std::string&);
+};
+
 
 template <typename T>
 trie::ActiveNode_t<T>::ActiveNode_t(TrieNode_t<T>* nd, int ed)
@@ -506,4 +629,5 @@ template <typename T, typename C>
 void trie::Trie_t<T, C>::setFuzzyLimitThreshold(int limit)
 {
     this->m_fuzzyLimitThreshold = limit;
+}
 }
