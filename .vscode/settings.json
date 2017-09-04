@@ -1,6 +1,11 @@
 {
   "files.associations": {
     "system_error": "cpp",
-    "type_traits": "cpp"
+    "type_traits": "cpp",
+    "stack": "cpp",
+    "algorithm": "cpp",
+    "unordered_map": "cpp",
+    "unordered_set": "cpp",
+    "sstream": "cpp"
   }
 }

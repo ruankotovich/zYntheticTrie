@@ -5,7 +5,7 @@
 
 int main()
 {
-  trie::Trie_t<Person, Person_Comparator> personTrie;
+  trie::Trie_t<Person> personTrie;
   personTrie.buildActiveNodeSet();
   Person p, p2;
 
