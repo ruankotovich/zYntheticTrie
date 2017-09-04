@@ -1,8 +1,64 @@
-#include "trie.hpp"
+#pragma once
+#include "trieNode.hpp"
+#include <algorithm>
+#include <dirent.h>
+#include <fstream>
+#include <iostream>
+#include <list>
+#include <map>
+#include <queue>
+#include <set>
+#include <sstream>
+#include <stack>
+#include <string>
+#include <unordered_map>
+#include <unordered_set>
+#include <vector>
 
-using namespace trie;
+namespace trie {
+template <class T>
+struct ActiveNode_t {
+    TrieNode_t<T>* node;
+    mutable int editDistance;
+    mutable int positionDistance;
+    ActiveNode_t(TrieNode_t<T>*, int);
+    ActiveNode_t(TrieNode_t<T>*, int, int);
+    bool operator<(const ActiveNode_t<T>&) const;
+};
 
-template <typename T>
+template <class T>
+struct ActiveNodeComparator_t {
+    bool operator()(const ActiveNode_t<T>&, const ActiveNode_t<T>&) const;
+};
+
+template <class T, class C = T>
+class Trie_t {
+    TrieNode_t<T>* m_lambdaNode; // used to indicate the first node
+    std::unordered_map<unsigned int, unsigned int> m_characterMap; // used to map all the characters to it's defined codes
+    std::unordered_map<unsigned int, char> m_reverseCharacterMap; // used to map all the defined codes to it's characters (4fun)
+    std::set<ActiveNode_t<T>> m_activeNodeSet; // uset to save the main activeNode set
+    std::set<std::string> m_stopWords;
+    void push_string_to_wchar(wchar_t*, std::string&); // push a string into a wchar_t array
+    int m_searchLimitThreshold; // threshold used for delimit the answers amount (default : 5)
+    int m_fuzzyLimitThreshold; // threshold used for delimit the edit distance from node (default : 1)
+    std::set<ActiveNode_t<T>> buildNewSet(std::set<ActiveNode_t<T>>&, unsigned int);
+
+public:
+    Trie_t(); // default constructor, receiving the filename which wordmap will be readen
+    void encodeCharacters(const std::string&); // used to start the encoding/decoding vector of  the characters contained on the file
+    void addStopWords(const std::string&);
+    bool isStopWord(std::string);
+    void printTrie(); // print the tree { see the tree on http://mshang.ca/syntree/ =) }
+    void putWord(std::string&, const T&); // include a string in the trie structure
+    void setSearchLimitThreshold(int); // set the m_searchLimitThreshold
+    void setFuzzyLimitThreshold(int); // set the m_fuzzyLimitThreshold
+    void buildActiveNodeSet(); // used to build the activeNode set at once
+    std::priority_queue<T, std::vector<T>, C> searchSimilarKeyword(std::string);
+};
+
+/// IMPLEMENTATION ///
+
+template <class T>
 ActiveNode_t<T>::ActiveNode_t(TrieNode_t<T>* nd, int ed)
     : node(nd)
     , editDistance(ed)
@@ -10,7 +66,7 @@ ActiveNode_t<T>::ActiveNode_t(TrieNode_t<T>* nd, int ed)
 {
 }
 
-template <typename T>
+template <class T>
 ActiveNode_t<T>::ActiveNode_t(TrieNode_t<T>* nd, int ed, int pos)
     : node(nd)
     , editDistance(ed)
@@ -18,20 +74,20 @@ ActiveNode_t<T>::ActiveNode_t(TrieNode_t<T>* nd, int ed, int pos)
 {
 }
 
-template <typename T>
+template <class T>
 bool ActiveNode_t<T>::operator<(const ActiveNode_t<T>& anode) const
 {
     return this->node < anode.node;
 }
 
-template <typename T>
+template <class T>
 bool ActiveNodeComparator_t<T>::operator()(const ActiveNode_t<T>& n1, const ActiveNode_t<T>& n2) const
 {
     return n1.editDistance > n2.editDistance;
 }
 
 // Trie_t private methods
-template <typename T, typename C>
+template <class T, class C>
 void Trie_t<T, C>::buildActiveNodeSet()
 {
     std::queue<std::pair<TrieNode_t<T>*, int>> seekQueue;
@@ -80,7 +136,7 @@ void Trie_t<T, C>::buildActiveNodeSet()
         }
     }
 }
-template <typename T, typename C>
+template <class T, class C>
 void Trie_t<T, C>::push_string_to_wchar(wchar_t* w, std::string& a)
 {
     setlocale(LC_ALL, "");
@@ -89,7 +145,7 @@ void Trie_t<T, C>::push_string_to_wchar(wchar_t* w, std::string& a)
     w[a.length()] = 0;
 }
 
-template <typename T, typename C>
+template <class T, class C>
 void Trie_t<T, C>::encodeCharacters(const std::string& filename)
 {
     // std::cout << "[LOG] Encoding characters." << std::endl;
@@ -115,7 +171,7 @@ void Trie_t<T, C>::encodeCharacters(const std::string& filename)
     std::cout << "Charmap has been mapped.\n";
 }
 
-template <typename T, typename C>
+template <class T, class C>
 void Trie_t<T, C>::addStopWords(const std::string& filename)
 {
     std::string currentLine;
@@ -127,7 +183,7 @@ void Trie_t<T, C>::addStopWords(const std::string& filename)
     }
 }
 
-template <typename T, typename C>
+template <class T, class C>
 bool Trie_t<T, C>::isStopWord(std::string str)
 {
     std::transform(str.begin(), str.end(), str.begin(), ::tolower);
@@ -135,7 +191,7 @@ bool Trie_t<T, C>::isStopWord(std::string str)
 }
 
 // Trie_t public methods
-template <typename T, typename C>
+template <class T, class C>
 Trie_t<T, C>::Trie_t()
     : m_searchLimitThreshold(5)
     , m_fuzzyLimitThreshold(1)
@@ -158,7 +214,7 @@ Trie_t<T, C>::Trie_t()
     encodeCharacters("charmap.cm");
 }
 
-template <typename T, typename C>
+template <class T, class C>
 void Trie_t<T, C>::printTrie()
 {
     TrieNode_t<T>* currentNode;
@@ -187,7 +243,7 @@ void Trie_t<T, C>::printTrie()
     }
 }
 
-template <typename T, typename C>
+template <class T, class C>
 void Trie_t<T, C>::putWord(std::string& str, const T& content)
 {
     TrieNode_t<T>*currentRoot, *lastRoot;
@@ -217,7 +273,7 @@ void Trie_t<T, C>::putWord(std::string& str, const T& content)
     }
 }
 
-template <typename T, typename C>
+template <class T, class C>
 std::set<ActiveNode_t<T>> Trie_t<T, C>::buildNewSet(std::set<ActiveNode_t<T>>& set, unsigned int curChar)
 {
     std::set<ActiveNode_t<T>> activeNodeSet;
@@ -329,7 +385,7 @@ std::set<ActiveNode_t<T>> Trie_t<T, C>::buildNewSet(std::set<ActiveNode_t<T>>& s
     return activeNodeSet;
 }
 
-template <typename T, typename C>
+template <class T, class C>
 std::priority_queue<T, std::vector<T>, C> Trie_t<T, C>::searchSimilarKeyword(std::string keyword)
 {
     std::set<T, C> lastAnswerSet;
@@ -388,14 +444,15 @@ std::priority_queue<T, std::vector<T>, C> Trie_t<T, C>::searchSimilarKeyword(std
     return ocurrencesQueue;
 }
 
-template <typename T, typename C>
+template <class T, class C>
 void Trie_t<T, C>::setSearchLimitThreshold(int limit)
 {
     this->m_searchLimitThreshold = limit;
 }
 
-template <typename T, typename C>
+template <class T, class C>
 void Trie_t<T, C>::setFuzzyLimitThreshold(int limit)
 {
     this->m_fuzzyLimitThreshold = limit;
+}
 }
