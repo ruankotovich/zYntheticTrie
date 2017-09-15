@@ -3,7 +3,7 @@ CC=g++
 CF=-std=c++14 -Wall -O2
 
 ### Program Arguments
-NAME=ttrie
+NAME=zynthetic
 
 ### Compiler Arguments
 SRC_P=src
