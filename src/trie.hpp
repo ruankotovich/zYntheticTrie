@@ -76,6 +76,12 @@ public:
         (*this->m_nodeContent) = content;
     }
 
+    template <typename... Args>
+    void emplaceValue(const Args&... args)
+    {
+        this->m_nodeContent = new T(args...);
+    }
+
     T getValue()
     {
         return (*this->m_nodeContent);
@@ -484,6 +490,37 @@ public:
     void setFuzzyLimitThreshold(int limit)
     {
         this->m_fuzzyLimitThreshold = limit;
+    }
+
+    // tip on https://stackoverflow.com/questions/28628484/custom-container-emplace-with-variadic-templates
+    template <typename... Args>
+    void emplaceWord(std::string& str, const Args&... args)
+    {
+        TrieNode_t<T>*currentRoot, *lastRoot;
+        currentRoot = this->m_lambdaNode;
+
+        wchar_t chart[str.size()];
+        push_string_to_wchar(chart, str);
+
+        for (unsigned int i = 0; i < wcslen(chart); i++) {
+
+            unsigned int code = this->m_characterMap[chart[i]];
+
+            lastRoot = currentRoot;
+            currentRoot = currentRoot->getChild(code);
+            if (!currentRoot) {
+                currentRoot = lastRoot->insertNReturnChild(code);
+            }
+        }
+
+        if (currentRoot != this->m_lambdaNode) {
+
+            if (!currentRoot->isEndOfWord()) {
+                currentRoot->setEndOfWord(true);
+            }
+
+            currentRoot->emplaceValue(args...);
+        }
     }
 };
 }

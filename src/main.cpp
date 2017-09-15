@@ -1,26 +1,22 @@
-#include "trie.hpp"
 #include "person.hpp"
+#include "trie.hpp"
 #include <iostream>
 #include <map>
 
 int main()
 {
-  trie::Trie_t<Person> personTrie;
-  personTrie.buildActiveNodeSet();
-  Person p, p2;
+    trie::Trie_t<Person> personTrie;
+    personTrie.buildActiveNodeSet();
 
-  p.age = 20;
-  p.name = "Duan";
+    // personTrie.emplaceWord("Ruan",10, "Ruan");
+    std::string name = "Duan";
+    std::string name2 = "Daniel";
+    personTrie.emplaceWord(name, 20, name);
+    personTrie.emplaceWord(name2, 23, name2);
 
-  p2.age = 23;
-  p2.name = "Daniel";
-
-  personTrie.putWord(p.name, p);
-  personTrie.putWord(p2.name, p2);
-
-  auto a = personTrie.searchSimilarKeyword("Dan");
-  while(!a.empty()){
-    std::cout << a.top().name << '\n';
-    a.pop();
-  }
+    auto a = personTrie.searchSimilarKeyword("Dan");
+    while (!a.empty()) {
+        std::cout << a.top().name << '\n';
+        a.pop();
+    }
 }
