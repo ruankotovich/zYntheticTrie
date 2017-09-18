@@ -251,7 +251,97 @@ class Trie_t {
         return activeNodeSet;
     }
 
+    // tip on https://stackoverflow.com/questions/28628484/custom-container-emplace-with-variadic-templates
+    template <typename... Args>
+    void emplaceIndividualWord(std::string& str, const Args&... args)
+    {
+        TrieNode_t<T>*currentRoot, *lastRoot;
+        currentRoot = this->m_lambdaNode;
+
+        wchar_t chart[str.size()];
+        push_string_to_wchar(chart, str);
+
+        for (unsigned int i = 0; i < wcslen(chart); i++) {
+
+            unsigned int code = this->m_characterMap[chart[i]];
+
+            lastRoot = currentRoot;
+            currentRoot = currentRoot->getChild(code);
+            if (!currentRoot) {
+                currentRoot = lastRoot->insertNReturnChild(code);
+            }
+        }
+
+        if (currentRoot != this->m_lambdaNode) {
+
+            if (!currentRoot->isEndOfWord()) {
+                currentRoot->setEndOfWord(true);
+            }
+
+            currentRoot->emplaceValue(args...);
+        }
+    }
+
+    void putIndividualWord(std::string& str, const T& content)
+    {
+        TrieNode_t<T>*currentRoot, *lastRoot;
+        currentRoot = this->m_lambdaNode;
+
+        wchar_t chart[str.size()];
+        push_string_to_wchar(chart, str);
+
+        for (unsigned int i = 0; i < wcslen(chart); i++) {
+
+            unsigned int code = this->m_characterMap[chart[i]];
+
+            lastRoot = currentRoot;
+            currentRoot = currentRoot->getChild(code);
+            if (!currentRoot) {
+                currentRoot = lastRoot->insertNReturnChild(code);
+            }
+        }
+
+        if (currentRoot != this->m_lambdaNode) {
+
+            if (!currentRoot->isEndOfWord()) {
+                currentRoot->setEndOfWord(true);
+            }
+
+            currentRoot->setValue(content);
+        }
+    }
+
 public:
+    void putWord(std::string& str, const T& content)
+    {
+        std::string word;
+        std::stringstream strstream(str);
+        while (std::getline(strstream, word, ' ')) {
+
+            std::transform(word.begin(), word.end(), word.begin(), ::tolower);
+
+            if (!this->isStopWord(word)) {
+                this->putIndividualWord(word, content);
+            }
+        }
+    }
+
+    // tip on https://stackoverflow.com/questions/28628484/custom-container-emplace-with-variadic-templates
+    template <typename... Args>
+    void emplaceWord(std::string& str, const Args&... args)
+    {
+        std::string word;
+        std::stringstream strstream(str);
+        while (std::getline(strstream, word, ' ')) {
+
+            std::transform(word.begin(), word.end(), word.begin(), ::tolower);
+
+            if (!this->isStopWord(word)) {
+                this->emplaceIndividualWord(word, args...);
+            }
+        }
+    }
+
     void buildActiveNodeSet()
     {
         std::queue<std::pair<TrieNode_t<T>*, int>> seekQueue;
@@ -395,35 +485,6 @@ public:
         }
     }
 
-    void putWord(std::string& str, const T& content)
-    {
-        TrieNode_t<T>*currentRoot, *lastRoot;
-        currentRoot = this->m_lambdaNode;
-
-        wchar_t chart[str.size()];
-        push_string_to_wchar(chart, str);
-
-        for (unsigned int i = 0; i < wcslen(chart); i++) {
-
-            unsigned int code = this->m_characterMap[chart[i]];
-
-            lastRoot = currentRoot;
-            currentRoot = currentRoot->getChild(code);
-            if (!currentRoot) {
-                currentRoot = lastRoot->insertNReturnChild(code);
-            }
-        }
-
-        if (currentRoot != this->m_lambdaNode) {
-
-            if (!currentRoot->isEndOfWord()) {
-                currentRoot->setEndOfWord(true);
-            }
-
-            currentRoot->setValue(content);
-        }
-    }
-
     std::priority_queue<T, std::vector<T>, C> searchSimilarKeyword(std::string keyword)
     {
         std::set<T, C> lastAnswerSet;
@@ -490,37 +551,6 @@ public:
     void setFuzzyLimitThreshold(int limit)
     {
         this->m_fuzzyLimitThreshold = limit;
-    }
-
-    // tip on https://stackoverflow.com/questions/28628484/custom-container-emplace-with-variadic-templates
-    template <typename... Args>
-    void emplaceWord(std::string& str, const Args&... args)
-    {
-        TrieNode_t<T>*currentRoot, *lastRoot;
-        currentRoot = this->m_lambdaNode;
-
-        wchar_t chart[str.size()];
-        push_string_to_wchar(chart, str);
-
-        for (unsigned int i = 0; i < wcslen(chart); i++) {
-
-            unsigned int code = this->m_characterMap[chart[i]];
-
-            lastRoot = currentRoot;
-            currentRoot = currentRoot->getChild(code);
-            if (!currentRoot) {
-                currentRoot = lastRoot->insertNReturnChild(code);
-            }
-        }
-
-        if (currentRoot != this->m_lambdaNode) {
-
-            if (!currentRoot->isEndOfWord()) {
-                currentRoot->setEndOfWord(true);
-            }
-
-            currentRoot->emplaceValue(args...);
-        }
     }
 };
 }
