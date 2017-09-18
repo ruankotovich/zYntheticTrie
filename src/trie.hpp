@@ -16,6 +16,8 @@
 
 namespace trie {
 
+#define IGNORE_WORD_LENGTH 3
+
 template <typename T>
 class TrieNode_t {
     std::map<unsigned int, TrieNode_t*> m_childrenMap; // used to save all the children (access / insertion O(log n))
@@ -82,9 +84,9 @@ public:
         this->m_nodeContent = new T(args...);
     }
 
-    T getValue()
+    const T* getValue()
     {
-        return (*this->m_nodeContent);
+        return this->m_nodeContent;
     }
 };
 
@@ -145,9 +147,9 @@ class Trie_t {
         std::set<ActiveNode_t<T>> activeNodeSet;
 
         /*
-        ** Considering node N
-        ** We can transform the content of this node for the currentWord by first adding a character. (Prebuilt Addiction)
-        */
+      ** Considering node N
+      ** We can transform the content of this node for the currentWord by first adding a character. (Prebuilt Addiction)
+      */
         // std::cout << "\nBuilding node for " << m_reverseCharacterMap[curChar] << '\n';
         for (auto curActiveNode = set.begin(); curActiveNode != set.end(); curActiveNode++) {
             if (curActiveNode->editDistance < m_fuzzyLimitThreshold) {
@@ -157,17 +159,17 @@ class Trie_t {
         }
 
         /*
-        ** Considering no+de P (child of N)
-        ** -  C1. Different character from `curChar` : (Posbuilt Substitution Addiction)
-        **    We can transform this character of P for the current character by substitution, relative to ED(N), then, we have to add P to
-        **    the set if and only if ED(N)+1 [previously calculated and updated] < threshold
-        **
-        ** -  C2. Equals character from `curChar` : (Posbuilt Match Addiction)
-        **    If this node character match with `curChar`, it means that we got to add it with ED(N) (indeed, when we got a match, we have ED=0) [1]
-        **    Once doing it, we have to add the descendant nodes of P (called here `PChild`) with distance PChild = ED(P) + DeepthFrom(P, PChild) < threshold
-        **
-        ** Addendum [1] - I must update the distance only if the new distance is lower than the last distance (it happens when a previously father node have been calculated)
-        */
+      ** Considering no+de P (child of N)
+      ** -  C1. Different character from `curChar` : (Posbuilt Substitution Addiction)
+      **    We can transform this character of P for the current character by substitution, relative to ED(N), then, we have to add P to
+      **    the set if and only if ED(N)+1 [previously calculated and updated] < threshold
+      **
+      ** -  C2. Equals character from `curChar` : (Posbuilt Match Addiction)
+      **    If this node character match with `curChar`, it means that we got to add it with ED(N) (indeed, when we got a match, we have ED=0) [1]
+      **    Once doing it, we have to add the descendant nodes of P (called here `PChild`) with distance PChild = ED(P) + DeepthFrom(P, PChild) < threshold
+      **
+      ** Addendum [1] - I must update the distance only if the new distance is lower than the last distance (it happens when a previously father node have been calculated)
+      */
 
         for (auto curActiveNode = set.begin(); curActiveNode != set.end(); curActiveNode++) {
 
@@ -206,9 +208,9 @@ class Trie_t {
                     }
 
                     /*
-              **  I've to fetch the children and the entire set of children to the active node if
-              **  and only if the dist( father, getChildRecursive(father)) ) < threshold;
-              */
+            **  I've to fetch the children and the entire set of children to the active node if
+            **  and only if the dist( father, getChildRecursive(father)) ) < threshold;
+            */
                     // std::cout << "\t\tIt's children will be verifieds to be added to the set : \n";
 
                     std::queue<TrieNode_t<T>*> toRecover; // a queue to save which node is on the way
@@ -522,7 +524,7 @@ public:
                     pQueue.pop();
 
                     if (currentSeeker->isEndOfWord()) {
-                        lastAnswerSet.insert(currentSeeker->getValue());
+                        lastAnswerSet.insert(*currentSeeker->getValue());
                     }
 
                     for (TrieNode_t<T>* curChild : currentSeeker->getChildren()) {

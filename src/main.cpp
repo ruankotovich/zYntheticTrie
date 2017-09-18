@@ -10,12 +10,12 @@ int main()
 
     std::string name = "Duan";
     std::string name2 = "Daniel";
-    std::string name3 = "Soto Bana";
-    std::string name4 = "Roab Soto";
-    std::string name5 = "Soto Bananation";
-    std::string name6 = "Soto Bana NAO";
-    std::string name7 = "Dougras Danyel";
-    std::string name8 = "Eu sou o dougras";
+    std::string name3 = "Soto";
+    std::string name4 = "Roab";
+    std::string name5 = "Bananation";
+    std::string name6 = "SotoBanaNAO";
+    std::string name7 = "Danyel";
+    std::string name8 = "dougras";
 
     personTrie.emplaceWord(name, 20, name);
     personTrie.emplaceWord(name2, 22, name2);
@@ -27,8 +27,8 @@ int main()
     personTrie.emplaceWord(name8, 28, name8);
 
     std::string search;
-    while (std::cin >> search) {
-        std::cout << " --- \n";
+    while (std::getline(std::cin, search)) {
+        std::cout << " --- Searching \"" << search << "\"\n";
         auto a = personTrie.searchSimilarKeyword(search);
         while (!a.empty()) {
             std::cout << a.top().name << '\n';
