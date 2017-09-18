@@ -19,17 +19,42 @@ namespace trie {
 #define IGNORE_WORD_LENGTH 3
 
 template <typename T>
+struct TrieResponse_t {
+    const T* content;
+    int editDistance;
+
+    TrieResponse_t(const T* _content, int _editDistance)
+        : content(_content)
+        , editDistance(_editDistance)
+    {
+    }
+};
+
+template <typename T>
+struct TrieResponseComparator_t {
+    bool operator()(const TrieResponse_t<T>& comparison1, const TrieResponse_t<T>& comparison2)
+    {
+        return comparison1.editDistance > comparison2.editDistance;
+    }
+};
+
+template <typename T>
 class TrieNode_t {
     std::map<unsigned int, TrieNode_t*> m_childrenMap; // used to save all the children (access / insertion O(log n))
     unsigned int m_content; // used to store the current character code in it's structure
     bool m_endOfWord;
-    T* m_nodeContent;
+    std::vector<T*>* m_nodeContent;
 
 public:
     TrieNode_t(unsigned int val)
         : m_content(val)
         , m_endOfWord(false)
     {
+    }
+
+    void buildContent()
+    {
+        m_nodeContent = new std::vector<T*>();
     }
 
     std::vector<TrieNode_t<T>*> getChildren()
@@ -72,21 +97,22 @@ public:
         this->m_endOfWord = eow;
     }
 
-    void setValue(const T& content)
+    void addValue(const T& content)
     {
-        this->m_nodeContent = new T();
-        (*this->m_nodeContent) = content;
+        auto newContent = new T();
+        (*newContent) = content;
+        this->m_nodeContent->push_back(newContent);
     }
 
     template <typename... Args>
     void emplaceValue(const Args&... args)
     {
-        this->m_nodeContent = new T(args...);
+        this->m_nodeContent->emplace_back(new T(args...));
     }
 
-    const T* getValue()
+    const std::vector<T*> getValues()
     {
-        return this->m_nodeContent;
+        return *this->m_nodeContent;
     }
 };
 
@@ -253,7 +279,37 @@ class Trie_t {
         return activeNodeSet;
     }
 
-    // tip on https://stackoverflow.com/questions/28628484/custom-container-emplace-with-variadic-templates
+public:
+    void putIndividualWord(std::string& str, const T& content)
+    {
+        TrieNode_t<T>*currentRoot, *lastRoot;
+        currentRoot = this->m_lambdaNode;
+
+        wchar_t chart[str.size()];
+        push_string_to_wchar(chart, str);
+
+        for (unsigned int i = 0; i < wcslen(chart); i++) {
+
+            unsigned int code = this->m_characterMap[chart[i]];
+
+            lastRoot = currentRoot;
+            currentRoot = currentRoot->getChild(code);
+            if (!currentRoot) {
+                currentRoot = lastRoot->insertNReturnChild(code);
+            }
+        }
+
+        if (currentRoot != this->m_lambdaNode) {
+
+            if (!currentRoot->isEndOfWord()) {
+                currentRoot->buildContent();
+                currentRoot->setEndOfWord(true);
+            }
+
+            currentRoot->addValue(content);
+        }
+    }
+
     template <typename... Args>
     void emplaceIndividualWord(std::string& str, const Args&... args)
     {
@@ -277,70 +333,11 @@ class Trie_t {
         if (currentRoot != this->m_lambdaNode) {
 
             if (!currentRoot->isEndOfWord()) {
+                currentRoot->buildContent();
                 currentRoot->setEndOfWord(true);
             }
 
             currentRoot->emplaceValue(args...);
-        }
-    }
-
-    void putIndividualWord(std::string& str, const T& content)
-    {
-        TrieNode_t<T>*currentRoot, *lastRoot;
-        currentRoot = this->m_lambdaNode;
-
-        wchar_t chart[str.size()];
-        push_string_to_wchar(chart, str);
-
-        for (unsigned int i = 0; i < wcslen(chart); i++) {
-
-            unsigned int code = this->m_characterMap[chart[i]];
-
-            lastRoot = currentRoot;
-            currentRoot = currentRoot->getChild(code);
-            if (!currentRoot) {
-                currentRoot = lastRoot->insertNReturnChild(code);
-            }
-        }
-
-        if (currentRoot != this->m_lambdaNode) {
-
-            if (!currentRoot->isEndOfWord()) {
-                currentRoot->setEndOfWord(true);
-            }
-
-            currentRoot->setValue(content);
-        }
-    }
-
-public:
-    void putWord(std::string& str, const T& content)
-    {
-        std::string word;
-        std::stringstream strstream(str);
-        while (std::getline(strstream, word, ' ')) {
-
-            std::transform(word.begin(), word.end(), word.begin(), ::tolower);
-
-            if (!this->isStopWord(word)) {
-                this->putIndividualWord(word, content);
-            }
-        }
-    }
-
-    // tip on https://stackoverflow.com/questions/28628484/custom-container-emplace-with-variadic-templates
-    template <typename... Args>
-    void emplaceWord(std::string& str, const Args&... args)
-    {
-        std::string word;
-        std::stringstream strstream(str);
-        while (std::getline(strstream, word, ' ')) {
-
-            std::transform(word.begin(), word.end(), word.begin(), ::tolower);
-
-            if (!this->isStopWord(word)) {
-                this->emplaceIndividualWord(word, args...);
-            }
         }
     }
 
@@ -487,9 +484,9 @@ public:
         }
     }
 
-    std::priority_queue<T, std::vector<T>, C> searchSimilarKeyword(std::string keyword)
+    std::priority_queue<TrieResponse_t<T>, std::vector<TrieResponse_t<T>>, TrieResponseComparator_t<T>> searchSimilarKeyword(std::string keyword)
     {
-        std::set<T, C> lastAnswerSet;
+        std::priority_queue<TrieResponse_t<T>, std::vector<TrieResponse_t<T>>, TrieResponseComparator_t<T>> ocurrencesQueue;
         std::priority_queue<ActiveNode_t<T>, std::vector<ActiveNode_t<T>>, ActiveNodeComparator_t<T>> activeList;
 
         std::transform(keyword.begin(), keyword.end(), keyword.begin(), ::tolower);
@@ -524,7 +521,9 @@ public:
                     pQueue.pop();
 
                     if (currentSeeker->isEndOfWord()) {
-                        lastAnswerSet.insert(*currentSeeker->getValue());
+                        for (auto oValue : currentSeeker->getValues()) {
+                            ocurrencesQueue.emplace(oValue, aNode.editDistance);
+                        }
                     }
 
                     for (TrieNode_t<T>* curChild : currentSeeker->getChildren()) {
@@ -534,12 +533,6 @@ public:
                     }
                 }
             }
-        }
-
-        std::priority_queue<T, std::vector<T>, C> ocurrencesQueue;
-
-        for (auto ocur : lastAnswerSet) {
-            ocurrencesQueue.push(ocur);
         }
 
         return ocurrencesQueue;

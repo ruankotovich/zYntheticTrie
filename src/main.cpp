@@ -16,22 +16,24 @@ int main()
     std::string name6 = "SotoBanaNAO";
     std::string name7 = "Danyel";
     std::string name8 = "dougras";
+    std::string name9 = "Duan";
 
-    personTrie.emplaceWord(name, 20, name);
-    personTrie.emplaceWord(name2, 22, name2);
-    personTrie.emplaceWord(name3, 23, name3);
-    personTrie.emplaceWord(name4, 24, name4);
-    personTrie.emplaceWord(name5, 25, name5);
-    personTrie.emplaceWord(name6, 26, name6);
-    personTrie.emplaceWord(name7, 27, name7);
-    personTrie.emplaceWord(name8, 28, name8);
+    personTrie.emplaceIndividualWord(name, 20, name);
+    personTrie.putIndividualWord(name2, Person(22, name2));
+    personTrie.putIndividualWord(name3, Person(23, name3));
+    personTrie.putIndividualWord(name4, Person(24, name4));
+    personTrie.putIndividualWord(name5, Person(25, name5));
+    personTrie.putIndividualWord(name6, Person(26, name6));
+    personTrie.putIndividualWord(name7, Person(27, name7));
+    personTrie.putIndividualWord(name8, Person(28, name8));
+    personTrie.putIndividualWord(name9, Person(29, name9));
 
     std::string search;
     while (std::getline(std::cin, search)) {
         std::cout << " --- Searching \"" << search << "\"\n";
         auto a = personTrie.searchSimilarKeyword(search);
         while (!a.empty()) {
-            std::cout << a.top().name << '\n';
+            std::cout << a.top().content->name << " - " << a.top().content->age << '\n';
             a.pop();
         }
     }
