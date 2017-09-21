@@ -1,4 +1,5 @@
-#pragma once
+#ifndef _ZYNTHETIC_TRIE_
+#define _ZYNTHETIC_TRIE_
 #include <algorithm>
 #include <dirent.h>
 #include <fstream>
@@ -22,7 +23,6 @@ template <typename T>
 struct TrieResponse_t {
     const T* content;
     int editDistance;
-
     TrieResponse_t(const T* _content, int _editDistance)
         : content(_content)
         , editDistance(_editDistance)
@@ -159,7 +159,7 @@ class Trie_t {
     std::set<std::string> m_stopWords; // set of stopwords
     int m_searchLimitThreshold; // threshold used for delimit the answers amount (default : 5)
     int m_fuzzyLimitThreshold; // threshold used for delimit the edit distance from node (default : 1)
-
+	const std::vector<T*> m_emptyResponse;
     void push_string_to_wchar(wchar_t* w, std::string& a)
     {
         setlocale(LC_ALL, "");
@@ -484,7 +484,60 @@ public:
         }
     }
 
-    std::priority_queue<TrieResponse_t<T>, std::vector<TrieResponse_t<T>>, TrieResponseComparator_t<T>> searchSimilarKeyword(std::string keyword)
+	std::pair<bool, std::vector<T*>> searchKeyword(std::string &keyword){
+        std::transform(keyword.begin(), keyword.end(), keyword.begin(), ::tolower);		
+		wchar_t chart[keyword.size()];
+		push_string_to_wchar(chart, keyword);
+
+		TrieNode_t<T>* currentNode = this->m_lambdaNode;
+
+			for (unsigned int i = 0; i < wcslen(chart); i++) {
+			currentNode = currentNode->getChild(m_characterMap[chart[i]]);
+			
+			if(currentNode == nullptr){
+				break;
+			}
+			
+		// lastActiveNodes = buildNewSet(lastActiveNodes, m_characterMap[chart[i]]);
+		}
+
+		if(currentNode != nullptr){
+			if(currentNode->isEndOfWord()){
+				return {true, currentNode->getValues()};			
+			}
+		}
+
+		return {false, this->m_emptyResponse};
+	}
+
+    std::priority_queue<TrieResponse_t<T>, std::vector<TrieResponse_t<T>>, TrieResponseComparator_t<T>> searchSimilarKeyword(std::string &keyword)
+    {
+        std::priority_queue<TrieResponse_t<T>, std::vector<TrieResponse_t<T>>, TrieResponseComparator_t<T>> ocurrencesQueue;
+
+        std::transform(keyword.begin(), keyword.end(), keyword.begin(), ::tolower);
+
+        std::set<ActiveNode_t<T>> lastActiveNodes = this->m_activeNodeSet;
+
+        wchar_t chart[keyword.size()];
+        push_string_to_wchar(chart, keyword);
+
+        for (unsigned int i = 0; i < wcslen(chart); i++) {
+            lastActiveNodes = buildNewSet(lastActiveNodes, m_characterMap[chart[i]]);
+        }
+
+		for (auto node : lastActiveNodes) {
+
+            if (node.node->isEndOfWord()) {
+                for (auto&& _target : node.node->getValues()) {
+                    ocurrencesQueue.emplace(_target, node.editDistance);
+                }
+            }
+        }        
+
+                return ocurrencesQueue;
+    }
+
+    std::priority_queue<TrieResponse_t<T>, std::vector<TrieResponse_t<T>>, TrieResponseComparator_t<T>> autocomplete(std::string &keyword)
     {
         std::priority_queue<TrieResponse_t<T>, std::vector<TrieResponse_t<T>>, TrieResponseComparator_t<T>> ocurrencesQueue;
         std::priority_queue<ActiveNode_t<T>, std::vector<ActiveNode_t<T>>, ActiveNodeComparator_t<T>> activeList;
@@ -549,3 +602,4 @@ public:
     }
 };
 }
+#endif
