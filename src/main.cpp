@@ -32,24 +32,25 @@ int main()
     std::cout << "\n >> ";
     while (std::getline(std::cin, search)) {
         std::cout << " --- Searching \"" << search << "\".\n";
-		auto mSearch = personTrie.searchKeyword(search);
-	if(mSearch.first){
-		for(auto element : mSearch.second){
-			std::cout << " -- "<< element->name << " - " << element->age;
-		}
-	}else{	
-        std::cout << " --- Couldn't find an exact match for this word, searching with errors.\n";
-        auto a = personTrie.searchSimilarKeyword(search);
-        if(a.empty()){
-        	std::cout << " --- Couldn't find any result on this query\n";
-			continue;
+        auto mSearch = personTrie.searchKeyword(search);
+        if (mSearch.first) {
+            for (auto element : mSearch.second) {
+                std::cout << " -- " << element.name << " - " << element.age;
+            }
+        } else {
+            std::cout << " --- Couldn't find an exact match for this word, searching with errors.\n";
+            auto a = personTrie.searchSimilarKeyword(search);
+            if (a.empty()) {
+                std::cout << " --- Couldn't find any result on this query\n";
+                std::cout << "\n >> ";
+                continue;
+            }
+
+            while (!a.empty()) {
+                std::cout << " -- " << a.top().content->name << " - " << a.top().content->age << '\n';
+                a.pop();
+            }
         }
-        
-        while (!a.empty()) {
-            std::cout << " -- " << a.top().content->name << " - " << a.top().content->age << '\n';
-            a.pop();
-        }
-    }
-		 std::cout << "\n >> ";		
+        std::cout << "\n >> ";
     }
 }

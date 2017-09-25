@@ -43,7 +43,7 @@ class TrieNode_t {
     std::map<unsigned int, TrieNode_t*> m_childrenMap; // used to save all the children (access / insertion O(log n))
     unsigned int m_content; // used to store the current character code in it's structure
     bool m_endOfWord;
-    std::vector<T*>* m_nodeContent;
+    std::vector<T>* m_nodeContent;
 
 public:
     TrieNode_t(unsigned int val)
@@ -54,7 +54,7 @@ public:
 
     void buildContent()
     {
-        m_nodeContent = new std::vector<T*>();
+        m_nodeContent = new std::vector<T>();
     }
 
     std::vector<TrieNode_t<T>*> getChildren()
@@ -99,20 +99,18 @@ public:
 
     void addValue(const T& content)
     {
-        auto newContent = new T();
-        (*newContent) = content;
-        this->m_nodeContent->push_back(newContent);
+        this->m_nodeContent->push_back(content);
     }
 
     template <typename... Args>
     void emplaceValue(const Args&... args)
     {
-        this->m_nodeContent->emplace_back(new T(args...));
+        this->m_nodeContent->emplace_back(args...);
     }
 
-    const std::vector<T*> getValues()
+    const std::vector<T>* getValues()
     {
-        return *this->m_nodeContent;
+        return this->m_nodeContent;
     }
 };
 
@@ -159,7 +157,7 @@ class Trie_t {
     std::set<std::string> m_stopWords; // set of stopwords
     int m_searchLimitThreshold; // threshold used for delimit the answers amount (default : 5)
     int m_fuzzyLimitThreshold; // threshold used for delimit the edit distance from node (default : 1)
-	const std::vector<T*> m_emptyResponse;
+    const std::vector<T> m_emptyResponse;
     void push_string_to_wchar(wchar_t* w, std::string& a)
     {
         setlocale(LC_ALL, "");
@@ -484,33 +482,34 @@ public:
         }
     }
 
-	std::pair<bool, std::vector<T*>> searchKeyword(std::string &keyword){
-        std::transform(keyword.begin(), keyword.end(), keyword.begin(), ::tolower);		
-		wchar_t chart[keyword.size()];
-		push_string_to_wchar(chart, keyword);
+    std::pair<bool, std::vector<T>> searchKeyword(std::string& keyword)
+    {
+        std::transform(keyword.begin(), keyword.end(), keyword.begin(), ::tolower);
+        wchar_t chart[keyword.size()];
+        push_string_to_wchar(chart, keyword);
 
-		TrieNode_t<T>* currentNode = this->m_lambdaNode;
+        TrieNode_t<T>* currentNode = this->m_lambdaNode;
 
-			for (unsigned int i = 0; i < wcslen(chart); i++) {
-			currentNode = currentNode->getChild(m_characterMap[chart[i]]);
-			
-			if(currentNode == nullptr){
-				break;
-			}
-			
-		// lastActiveNodes = buildNewSet(lastActiveNodes, m_characterMap[chart[i]]);
-		}
+        for (unsigned int i = 0; i < wcslen(chart); i++) {
+            currentNode = currentNode->getChild(m_characterMap[chart[i]]);
 
-		if(currentNode != nullptr){
-			if(currentNode->isEndOfWord()){
-				return {true, currentNode->getValues()};			
-			}
-		}
+            if (currentNode == nullptr) {
+                break;
+            }
 
-		return {false, this->m_emptyResponse};
-	}
+            // lastActiveNodes = buildNewSet(lastActiveNodes, m_characterMap[chart[i]]);
+        }
 
-    std::priority_queue<TrieResponse_t<T>, std::vector<TrieResponse_t<T>>, TrieResponseComparator_t<T>> searchSimilarKeyword(std::string &keyword)
+        if (currentNode != nullptr) {
+            if (currentNode->isEndOfWord()) {
+                return { true, *currentNode->getValues() };
+            }
+        }
+
+        return { false, this->m_emptyResponse };
+    }
+
+    std::priority_queue<TrieResponse_t<T>, std::vector<TrieResponse_t<T>>, TrieResponseComparator_t<T>> searchSimilarKeyword(std::string& keyword)
     {
         std::priority_queue<TrieResponse_t<T>, std::vector<TrieResponse_t<T>>, TrieResponseComparator_t<T>> ocurrencesQueue;
 
@@ -525,19 +524,19 @@ public:
             lastActiveNodes = buildNewSet(lastActiveNodes, m_characterMap[chart[i]]);
         }
 
-		for (auto node : lastActiveNodes) {
+        for (auto node : lastActiveNodes) {
 
             if (node.node->isEndOfWord()) {
-                for (auto&& _target : node.node->getValues()) {
-                    ocurrencesQueue.emplace(_target, node.editDistance);
+                for (auto& _target : *node.node->getValues()) {
+                    ocurrencesQueue.emplace(&_target, node.editDistance);
                 }
             }
-        }        
+        }
 
-                return ocurrencesQueue;
+        return ocurrencesQueue;
     }
 
-    std::priority_queue<TrieResponse_t<T>, std::vector<TrieResponse_t<T>>, TrieResponseComparator_t<T>> autocomplete(std::string &keyword)
+    std::priority_queue<TrieResponse_t<T>, std::vector<TrieResponse_t<T>>, TrieResponseComparator_t<T>> autocomplete(std::string& keyword)
     {
         std::priority_queue<TrieResponse_t<T>, std::vector<TrieResponse_t<T>>, TrieResponseComparator_t<T>> ocurrencesQueue;
         std::priority_queue<ActiveNode_t<T>, std::vector<ActiveNode_t<T>>, ActiveNodeComparator_t<T>> activeList;
@@ -574,7 +573,7 @@ public:
                     pQueue.pop();
 
                     if (currentSeeker->isEndOfWord()) {
-                        for (auto oValue : currentSeeker->getValues()) {
+                        for (auto oValue : *currentSeeker->getValues()) {
                             ocurrencesQueue.emplace(oValue, aNode.editDistance);
                         }
                     }
