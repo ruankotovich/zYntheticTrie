@@ -339,7 +339,7 @@ public:
         }
     }
 
-    void buildActiveNodeSet()
+    void buildActiveNodeSet(bool _onlyFinalWords)
     {
         std::queue<std::pair<TrieNode_t<T>*, int>> seekQueue;
         std::unordered_map<TrieNode_t<T>*, TrieNode_t<T>*> father;
@@ -367,7 +367,7 @@ public:
                         seekQueue.emplace(child, currentLevel);
                     }
 
-                    if (child->isEndOfWord()) { // verify if this child is end of word
+                    if (!_onlyFinalWords || child->isEndOfWord()) { // verify if this child is end of word
                         TrieNode_t<T>* currentChild = child;
                         m_activeNodeSet.emplace(currentChild, currentLevel); // add the child to the activeSet
 
@@ -386,6 +386,12 @@ public:
                 }
             }
         }
+
+        std::cout << "Active Node Set : \n";
+        for(auto &node : m_activeNodeSet){
+            std::cout << node.editDistance << "\n";
+        }
+        std::cout << std::endl;
     }
 
     void encodeCharacters(const std::string& filename)

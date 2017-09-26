@@ -6,8 +6,7 @@
 int main()
 {
     trie::Trie_t<Person> personTrie;
-    personTrie.buildActiveNodeSet();
-
+    
     std::string name = "Duan";
     std::string name2 = "Daniel";
     std::string name3 = "Soto";
@@ -17,7 +16,8 @@ int main()
     std::string name7 = "Danyel";
     std::string name8 = "dougras";
     std::string name9 = "Duan";
-
+    
+    
     personTrie.emplaceIndividualWord(name, 20, name);
     personTrie.putIndividualWord(name2, Person(22, name2));
     personTrie.putIndividualWord(name3, Person(23, name3));
@@ -27,7 +27,9 @@ int main()
     personTrie.putIndividualWord(name7, Person(27, name7));
     personTrie.putIndividualWord(name8, Person(28, name8));
     personTrie.putIndividualWord(name9, Person(29, name9));
-
+    
+    personTrie.buildActiveNodeSet(false);
+    
     std::string search;
     std::cout << "\n >> ";
     while (std::getline(std::cin, search)) {
@@ -35,7 +37,7 @@ int main()
         auto mSearch = personTrie.searchKeyword(search);
         if (mSearch.first) {
             for (auto element : mSearch.second) {
-                std::cout << " -- " << element.name << " - " << element.age;
+                std::cout << " -- " << element.name << " - " << element.age << std::endl;
             }
         } else {
             std::cout << " --- Couldn't find an exact match for this word, searching with errors.\n";
